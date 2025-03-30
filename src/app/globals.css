@@ -1,0 +1,7 @@
+@import "tailwindcss";
+/*noinspection CssInvalidAtRule*/
+@plugin "daisyui";
+
+* {
+    @apply rounded-sm;
+}
