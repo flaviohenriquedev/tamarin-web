@@ -16,8 +16,8 @@ export function Table<E extends EntidadePadrao>({lista, colunas, funcaoEditar, f
     const [entidadeParaDeletar, setEntidadeParaDeletar] = useState<E | null>(null);
 
     function renderHead() {
-        return colunas ? colunas.map(coluna => {
-            return <th key={coluna.descricao}>{coluna.descricao}</th>
+        return colunas ? colunas.map((coluna, index) => {
+            return <th key={index}>{coluna.descricao}</th>
         }) : <></>
     }
 
@@ -32,7 +32,7 @@ export function Table<E extends EntidadePadrao>({lista, colunas, funcaoEditar, f
     function renderRow() {
         return lista && lista.length > 0 ? lista.map(item => {
             return (
-                <tr key={item.id}>
+                <tr key={Math.random()}>
                     {renderRowItem(item)}
                     {funcaoEditar && (
                         <td>
@@ -59,7 +59,7 @@ export function Table<E extends EntidadePadrao>({lista, colunas, funcaoEditar, f
     function renderRowItem(row: any) {
         return colunas.map((coluna, index) => {
             return (
-                <td key={index}>{row[coluna.field]}</td>
+                <td key={`${index.toString()}-${coluna.descricao}`}>{row[coluna.field]}</td>
             )
         })
     }
@@ -85,7 +85,7 @@ export function Table<E extends EntidadePadrao>({lista, colunas, funcaoEditar, f
                     {funcaoDeletar && (
                         <Button descricao="Sim" onClick={() => funcaoDeletar(entidadeParaDeletar)} />
                     )}
-                    <Button descricao="Não" tipoClasse="warning" onClick={() => closeModal(`modal_delete`)}/>
+                    <Button descricao="Não" tipoClasse="btn-warning" onClick={() => closeModal(`modal_delete`)}/>
                 </Modal>
             )}
         </>

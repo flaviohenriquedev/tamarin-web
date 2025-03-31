@@ -20,7 +20,10 @@ export function CadastroUsuario() {
     const [atualizarLista, setAtualizarLista] = useState<boolean>(false);
 
     useEffect(() => {
-        usuarioService.listar().then(result => setListaUsuario(result));
+        usuarioService.listar().then(result => {
+            setListaUsuario(result)
+            console.log(result)
+        });
     }, [atualizarLista]);
 
     function handleSubmit(event: FormEvent<HTMLFormElement>) {
