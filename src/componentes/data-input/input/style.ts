@@ -1,3 +1,4 @@
 export const inputStyle = `
-    input input-sm
+    input
+    input-sm
 `

@@ -1,9 +1,7 @@
 'use client'
 
-import React, {InputHTMLAttributes, useEffect} from "react";
-
-import {set} from "lodash";
-import {EntidadePadrao} from "@/entidades/root/EntidadePadrao";
+import React, {InputHTMLAttributes} from "react";
+import {EntidadePadrao} from "@/root/entidades/EntidadePadrao";
 import {inputStyle} from "@/componentes/data-input/input/style";
 import {useValorAtributo} from "@/componentes/data-input/input/hook/useValorAtributo";
 
@@ -13,20 +11,21 @@ interface Props<E extends EntidadePadrao> extends InputHTMLAttributes<HTMLInputE
 }
 
 export const InputString = ({
-                          id,
-                          placeholder,
-                          name,
-                          disabled,
-                          entidade,
-                          atributo,
-                          onBlur,
-                          onKeyDown,
-                          required = false,
-                          value,
-                          onChange
-                      }: Props<any>) => {
+                                id,
+                                type,
+                                placeholder,
+                                name,
+                                disabled,
+                                entidade,
+                                atributo,
+                                onBlur,
+                                onKeyDown,
+                                required = false,
+                                value,
+                                onChange
+                            }: Props<any>) => {
 
-    const { valorAtributo, atribuirValor } = useValorAtributo(entidade, atributo);
+    const {valorAtributo, atribuirValor} = useValorAtributo(entidade, atributo);
 
     return (
         <input
@@ -34,6 +33,7 @@ export const InputString = ({
             id={id}
             placeholder={placeholder}
             name={name}
+            type={type ? type : "text"}
             disabled={disabled}
             value={value ? value : valorAtributo}
             onChange={onChange ? onChange : (e) => atribuirValor(e.target.value)}

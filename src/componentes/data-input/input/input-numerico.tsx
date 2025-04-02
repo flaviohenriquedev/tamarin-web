@@ -3,7 +3,7 @@
 import React, {InputHTMLAttributes, useEffect, useState} from "react";
 
 import {get, set} from "lodash";
-import {EntidadePadrao} from "@/entidades/root/EntidadePadrao";
+import {EntidadePadrao} from "@/root/entidades/EntidadePadrao";
 import {inputStyle} from "@/componentes/data-input/input/style";
 import {useValorAtributo} from "@/componentes/data-input/input/hook/useValorAtributo";
 

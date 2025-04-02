@@ -1,9 +1,5 @@
-import {Login} from "@/pages/login/login";
+import {redirect} from "next/navigation";
 
 export default function Home() {
-    return (
-        <main>
-            <Login/>
-        </main>
-    );
+    redirect("/login")
 }

@@ -8,8 +8,13 @@ export const usuarioConlunasListagem: Coluna[] = [
         tipoDado: TipoDadoEnum.STRING,
     },
     {
-        descricao: 'Idade',
-        field: 'idade',
+        descricao: 'Email',
+        field: 'email',
         tipoDado: TipoDadoEnum.DECIMAL,
+    },
+    {
+        descricao: 'CPF',
+        field: 'cpf',
+        tipoDado: TipoDadoEnum.STRING,
     },
 ]

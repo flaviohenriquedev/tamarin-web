@@ -24,33 +24,38 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.debug.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\flavio.rosa\\MyProjects\\tamarin\\tamarin-web\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.debug.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web/assets/imagens",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "C:\\Users\\flavio.rosa\\MyProjects\\tamarin\\tamarin-web\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\assets\imagens" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\app\[autenticado]" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\pages" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\data-input\input\hook" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\pages\cadastro-usuario\entidade" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\auth" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\root\entidades" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\root" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\assets\imagens" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="JavaScript Debug.debug">
     <configuration name="debug" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
     </configuration>
@@ -92,7 +97,8 @@
       <workItem from="1743474722898" duration="1555000" />
       <workItem from="1743583038267" duration="532000" />
       <workItem from="1743583613430" duration="4750000" />
-      <workItem from="1743607829207" duration="2942000" />
+      <workItem from="1743607829207" duration="2968000" />
+      <workItem from="1743616241873" duration="7143000" />
     </task>
     <servers />
   </component>
@@ -103,5 +109,17 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/crud/crud-service.ts</url>
+          <line>14</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

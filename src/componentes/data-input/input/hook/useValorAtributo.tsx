@@ -2,7 +2,7 @@
 
 import {useEffect, useState} from "react";
 import {get, set} from "lodash";
-import {EntidadePadrao} from "@/entidades/root/EntidadePadrao";
+import {EntidadePadrao} from "@/root/entidades/EntidadePadrao";
 
 export function useValorAtributo<E extends EntidadePadrao>(entidade: E, atributo: string) {
     const [valorAtributo, setValorAtributo] = useState<string | number | readonly string[] | undefined>('');
@@ -10,7 +10,13 @@ export function useValorAtributo<E extends EntidadePadrao>(entidade: E, atributo
     useEffect(() => {
         if (atributo) {
             const valor = get(entidade, atributo);
-            setValorAtributo(valor === 0 || valor === '' || valor === undefined ? '' : valor);
+            setValorAtributo(
+                valor === 0
+                || valor === ''
+                || valor === undefined
+                || valor === null
+                    ? ''
+                    : valor);
         }
     }, [atributo, entidade]);
 

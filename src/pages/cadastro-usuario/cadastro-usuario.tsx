@@ -2,14 +2,13 @@
 
 import {Button} from "@/componentes/action/button";
 import {FormEvent, useEffect, useState} from "react";
-import {Usuario} from "@/entidades/usuario/Usuario";
+import {Usuario} from "@/pages/cadastro-usuario/entidade/Usuario";
 import {LabelContainer} from "@/componentes/data-display/label-container/label-container";
 import {LineContainer} from "@/componentes/data-display/line-container/line-container";
-import {InputNumerico} from "@/componentes/data-input/input/input-numerico";
 import {InputString} from "@/componentes/data-input/input/input-string";
-import {UsuarioService} from "@/pages/usuario/usuario-service";
+import {UsuarioService} from "@/pages/cadastro-usuario/usuario-service";
 import {Table} from "@/componentes/data-display/table/table";
-import {usuarioConlunasListagem} from "@/pages/usuario/usuario-colunas-listagem";
+import {usuarioConlunasListagem} from "@/pages/cadastro-usuario/usuario-colunas-listagem";
 
 const usuarioService = new UsuarioService();
 
@@ -52,9 +51,17 @@ export function CadastroUsuario() {
                             atributo={`nome`}/>
                     </LabelContainer>
 
-                    <LabelContainer descricao={`Idade Usuário`}>
-                        <InputNumerico entidade={usuario}
-                                       atributo={`idade`}/>
+                    <LabelContainer descricao={`Email`}>
+                        <InputString
+                            entidade={usuario}
+                            atributo={`nome`}
+                            type={`email`}/>
+                    </LabelContainer>
+
+                    <LabelContainer descricao={`CPF`}>
+                        <InputString
+                            entidade={usuario}
+                            atributo={`cpf`}/>
                     </LabelContainer>
                 </LineContainer>
                 <LineContainer>

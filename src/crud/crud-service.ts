@@ -1,6 +1,6 @@
-import {EntidadePadrao} from "@/entidades/root/EntidadePadrao";
+import {EntidadePadrao} from "@/root/entidades/EntidadePadrao";
 import {EndPoint} from "@/type/root/root-types";
-import {BaseUrl} from "@/crud/base-url";
+import {BaseUrl} from "@/root/base-url";
 import {toast} from "react-toastify";
 
 export class CrudService<E extends EntidadePadrao> {

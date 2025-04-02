@@ -1,5 +1,5 @@
 import {Coluna} from "@/type/root/root-types";
-import {EntidadePadrao} from "@/entidades/root/EntidadePadrao";
+import {EntidadePadrao} from "@/root/entidades/EntidadePadrao";
 import {Modal} from "@/componentes/data-display/modal/modal";
 import {Button} from "@/componentes/action/button";
 import {closeModal, openModal} from "@/componentes/data-display/modal/modal-funcoes";
