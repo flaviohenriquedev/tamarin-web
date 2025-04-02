@@ -1,9 +1,9 @@
-import {CadastroUsuario} from "@/pages/usuario/cadastro-usuario";
+import {Login} from "@/pages/login/login";
 
 export default function Home() {
     return (
         <main>
-            <CadastroUsuario/>
+            <Login/>
         </main>
     );
 }
