@@ -29,7 +29,7 @@
     "JavaScript Debug.debug.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web/assets/imagens",
+    "last_opened_file_path": "C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web/src/modules/_root/icones",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -37,26 +37,41 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
     "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "ts.external.directory.path": "C:\\Users\\flavio.rosa\\MyProjects\\tamarin\\tamarin-web\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\modules\_root\icones" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\core\icones" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\pages\login" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\auth" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\assets\imagens" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\pages\cadastro-usuario\entidade" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\auth" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\root\entidades" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\root" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\assets\imagens" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\_root\constantes" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\modules\usuario\elementos" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\modules\usuario" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.debug">
-    <configuration name="debug" type="JavascriptDebugType" uri="http://localhost:3000/">
+    <configuration name="debug" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
@@ -71,13 +86,14 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.debug" />
+      <item itemvalue="npm.build" />
       <item itemvalue="npm.dev" />
     </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -98,7 +114,16 @@
       <workItem from="1743583038267" duration="532000" />
       <workItem from="1743583613430" duration="4750000" />
       <workItem from="1743607829207" duration="2968000" />
-      <workItem from="1743616241873" duration="7143000" />
+      <workItem from="1743616241873" duration="8117000" />
+      <workItem from="1743677849398" duration="1485000" />
+      <workItem from="1743696243422" duration="14986000" />
+      <workItem from="1743735028038" duration="6768000" />
+      <workItem from="1743799400228" duration="6598000" />
+      <workItem from="1743851094081" duration="13628000" />
+      <workItem from="1743908181767" duration="1884000" />
+      <workItem from="1743911719722" duration="3583000" />
+      <workItem from="1744022811096" duration="9624000" />
+      <workItem from="1744032978190" duration="19268000" />
     </task>
     <servers />
   </component>
@@ -109,17 +134,5 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/crud/crud-service.ts</url>
-          <line>14</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

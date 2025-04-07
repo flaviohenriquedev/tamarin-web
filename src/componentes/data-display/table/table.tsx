@@ -1,9 +1,9 @@
 import {Coluna} from "@/type/root/root-types";
-import {EntidadePadrao} from "@/root/entidades/EntidadePadrao";
 import {Modal} from "@/componentes/data-display/modal/modal";
 import {Button} from "@/componentes/action/button";
 import {closeModal, openModal} from "@/componentes/data-display/modal/modal-funcoes";
 import {useCallback, useState} from "react";
+import {EntidadePadrao} from "@/sistema/_root/entidades/EntidadePadrao";
 
 type Props<E extends EntidadePadrao> = {
     lista: E[];
@@ -12,7 +12,7 @@ type Props<E extends EntidadePadrao> = {
     funcaoDeletar?: (entidade: E) => void;
 }
 
-export function Table<E extends EntidadePadrao>({lista, colunas, funcaoEditar, funcaoDeletar}: Props<any>) {
+export function Table<E extends EntidadePadrao>({lista, colunas, funcaoEditar, funcaoDeletar}: Props<E>) {
     const [entidadeParaDeletar, setEntidadeParaDeletar] = useState<E | null>(null);
 
     function renderHead() {
@@ -57,6 +57,7 @@ export function Table<E extends EntidadePadrao>({lista, colunas, funcaoEditar, f
     }
 
     function renderRowItem(row: any) {
+        console.log(row)
         return colunas.map((coluna, index) => {
             return (
                 <td key={`${index.toString()}-${coluna.descricao}`}>{row[coluna.field]}</td>

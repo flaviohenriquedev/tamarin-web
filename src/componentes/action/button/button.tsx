@@ -1,6 +1,6 @@
 'use client'
 
-import {ButtonHTMLAttributes, useEffect, useState} from "react";
+import {ButtonHTMLAttributes} from "react";
 
 type TipoClasseBotao =
     'btn-neutral' |
@@ -20,12 +20,14 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export function Button({
                            descricao,
                            type,
+                           disabled,
                            tipoClasse = 'btn-primary',
                            onClick
                        }: ButtonProps) {
 
     return (
         <button type={type}
+                disabled={disabled}
                 className={`
                         btn
                         btn-active

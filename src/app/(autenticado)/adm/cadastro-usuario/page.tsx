@@ -1,7 +1,7 @@
-import {CadastroUsuario} from "@/pages/cadastro-usuario/cadastro-usuario";
+import {UsuarioPaginaInicial} from "@/sistema/recursos-humanos/modulos/usuario/usuario-pagina-inicial";
 
 export default function PaginaCadastroUsuario() {
     return (
-        <CadastroUsuario />
+        <UsuarioPaginaInicial />
     )
 }

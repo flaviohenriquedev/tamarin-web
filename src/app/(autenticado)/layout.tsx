@@ -1,10 +1,19 @@
 import {ReactNode} from "react";
-import {LayoutSistema} from "@/pages/layout-sistema/layout-sistema";
+import {RootContextProvider} from "@/sistema/_root/context/root-context";
 
-export default function LayoutAdm({children}: {children: ReactNode}) {
+export default async function LayoutAutenticacao({children}: { children: ReactNode }) {
+    // const session = await getServerSession(nextAuthOptions)
+    //
+    // if (!session?.user?.token) {
+    //     console.log("DENTRO DO CARAI", session)
+    //     redirect("/")
+    // }
+
     return (
-        <LayoutSistema>
-            {children}
-        </LayoutSistema>
+        <RootContextProvider>
+            <div>
+                {children}
+            </div>
+        </RootContextProvider>
     )
 }

@@ -1,4 +1,4 @@
-import {MetodoHTTP, TipoDadoEnum} from "@/enum/root-enum";
+import {MetodoHTTP, TipoDadoEnum} from "@/sistema/_root/enums/root-enum";
 
 export type EndPoint = {
     listar?: DetalheEndPoint;
@@ -10,7 +10,7 @@ export type EndPoint = {
 };
 
 export type DetalheEndPoint = {
-    caminho: string | ((value: any) => string);
+    caminho: string;
     metodo: MetodoHTTP;
 }
 

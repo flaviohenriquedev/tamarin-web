@@ -1,7 +1,95 @@
-@import "tailwindcss";
-/*noinspection CssInvalidAtRule*/
-@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    @apply rounded-sm;
+@import "tailwindcss";
+
+/*noinspection CssInvalidAtRule*/
+@plugin "daisyui" {
+    themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+    name: "light";
+    default: true;
+    --color-primary: #1c1c1c;
+    --color-secondary: #daddd8;
+    --color-primary-content: #daddd8;
+    --color-base-100: white
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+}
+
+.container-app {
+    display: grid;
+    grid-template-areas:
+            "sidebar-app container-pagina "
+            "sidebar-app container-pagina "
+            "sidebar-app container-pagina "
+            "sidebar-app container-pagina ";
+    grid-template-columns: 20rem 1fr;
+    height: 100vh;
+}
+
+.sidebar-app {
+    grid-area: sidebar-app;
+    display: grid;
+    grid-template-areas:
+        "nome-app"
+        "container-rotas-menu";
+    grid-template-rows: 5rem 1fr;
+}
+
+.container-pagina {
+    grid-area: container-pagina;
+    display: grid;
+    grid-template-areas:
+        "navbar-app"
+        "conteudo-pagina";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1rem 1fr;
+}
+
+.navbar-app {
+    grid-area: navbar-app;
+}
+
+.conteudo-pagina {
+    grid-area: conteudo-pagina;
+}
+
+.nome-app {
+    grid-area: nome-app;
+}
+
+.nome-app-label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18pt;
+}
+
+.container-rotas-menu {
+    grid-area: container-rotas-menu;
+}
+
+.item-rota-menu {
+    display: grid;
+    grid-template-areas:
+        "icone-rota-menu descricao-rota-menu arrow-rota-menu";
+    grid-template-columns: 5rem 1fr auto;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.icone-rota-menu {
+    grid-area: icone-rota-menu;
+}
+
+.descricao-rota-menu {
+    grid-area: descricao-rota-menu;
+}
+
+.arrow-rota-menu {
+    grid-area: arrow-rota-menu;
 }

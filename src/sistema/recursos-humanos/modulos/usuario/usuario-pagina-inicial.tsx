@@ -1,18 +1,18 @@
 'use client'
 
-import {Button} from "@/componentes/action/button";
 import {FormEvent, useEffect, useState} from "react";
-import {Usuario} from "@/pages/cadastro-usuario/entidade/Usuario";
-import {LabelContainer} from "@/componentes/data-display/label-container/label-container";
 import {LineContainer} from "@/componentes/data-display/line-container/line-container";
+import {LabelContainer} from "@/componentes/data-display/label-container/label-container";
 import {InputString} from "@/componentes/data-input/input/input-string";
-import {UsuarioService} from "@/pages/cadastro-usuario/usuario-service";
+import {Button} from "@/componentes/action/button";
 import {Table} from "@/componentes/data-display/table/table";
-import {usuarioConlunasListagem} from "@/pages/cadastro-usuario/usuario-colunas-listagem";
+import {UsuarioService} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario-service";
+import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario";
+import {usuarioConlunasListagem} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario-colunas-listagem";
 
 const usuarioService = new UsuarioService();
 
-export function CadastroUsuario() {
+export function UsuarioPaginaInicial() {
 
     const [usuario, setUsuario] = useState<Usuario>(new Usuario());
     const [listaUsuario, setListaUsuario] = useState<Usuario[]>([]);
@@ -21,13 +21,12 @@ export function CadastroUsuario() {
     useEffect(() => {
         usuarioService.listar().then(result => {
             setListaUsuario(result)
-            console.log(result)
         });
     }, [atualizarLista]);
 
     function handleSubmit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
-        usuarioService.salvar(usuario).then(_ => {
+        usuarioService.salvar(usuario).then(() => {
             setUsuario(new Usuario())
             setAtualizarLista(!atualizarLista)
         });
@@ -38,7 +37,7 @@ export function CadastroUsuario() {
     }
 
     function handleDeletar(entidade: Usuario) {
-        usuarioService.deletar(entidade).then();
+        usuarioService.deletar(entidade.id).then();
     }
 
     return (
@@ -48,13 +47,14 @@ export function CadastroUsuario() {
                     <LabelContainer descricao={`Nome Usuário`}>
                         <InputString
                             entidade={usuario}
+                            placeholder={`Nome Completo`}
                             atributo={`nome`}/>
                     </LabelContainer>
 
                     <LabelContainer descricao={`Email`}>
                         <InputString
                             entidade={usuario}
-                            atributo={`nome`}
+                            atributo={`email`}
                             type={`email`}/>
                     </LabelContainer>
 

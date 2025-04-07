@@ -1,4 +1,6 @@
 import {ReactNode} from "react";
+import {Logout} from "@/pages/layout-sistema/logout";
+import {Sidebar} from "@/componentes/navigation/sidebar/sidebar";
 
 type PropsLayoutSistema = {
     children: ReactNode
@@ -17,11 +19,12 @@ export function LayoutSistema({children}: PropsLayoutSistema) {
                 min-h-16
                 min-w-full
             `}>CABEÇALHO
+                <Logout />
             </header>
 
             <div className={`grid grid-cols-12 pt-16`}>
                 <div className={`hidden md:block md:col-start-1 md:col-end-2`}>
-                    Sidebar
+                    <Sidebar />
                 </div>
                 <div className={`col-start-3 col-end-13`}>
                     {children}

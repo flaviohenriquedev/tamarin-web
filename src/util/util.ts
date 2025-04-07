@@ -1,9 +1,5 @@
 export class Util {
 
-    static isNull(valor: any): boolean {
-        return valor === null || valor === undefined;
-    }
-
     static mascaraCPF(valor?: string): string {
         if (valor) {
             valor.replace(/\D/g, '');
@@ -45,9 +41,5 @@ export class Util {
 
     static generateRandomId(min: number = 1, max: number = 100000): number {
         return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    static getValorEmString(valor: any): string {
-        return valor.toString()
     }
 }

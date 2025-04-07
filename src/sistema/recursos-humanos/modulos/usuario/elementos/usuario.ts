@@ -1,4 +1,4 @@
-import {EntidadePadrao} from "@/root/entidades/EntidadePadrao";
+import {EntidadePadrao} from "@/sistema/_root/entidades/EntidadePadrao";
 
 export class Usuario extends EntidadePadrao {
     nome: string;

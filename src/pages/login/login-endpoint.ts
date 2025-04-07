@@ -1,6 +1,5 @@
 import {EndPoint} from "@/type/root/root-types";
-import {MetodoHTTP} from "@/enum/root-enum";
-
+import {MetodoHTTP} from "@/sistema/_root/enums/root-enum";
 const rotas: EndPoint = {
     login: {
         caminho: '/auth/login',
@@ -8,6 +7,6 @@ const rotas: EndPoint = {
     }
 }
 
-export const authEndpoint: EndPoint = {
+export const loginEndpoint: EndPoint = {
     ...rotas
 }

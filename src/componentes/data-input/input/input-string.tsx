@@ -1,9 +1,9 @@
 'use client'
 
 import React, {InputHTMLAttributes} from "react";
-import {EntidadePadrao} from "@/root/entidades/EntidadePadrao";
 import {inputStyle} from "@/componentes/data-input/input/style";
 import {useValorAtributo} from "@/componentes/data-input/input/hook/useValorAtributo";
+import {EntidadePadrao} from "@/sistema/_root/entidades/EntidadePadrao";
 
 interface Props<E extends EntidadePadrao> extends InputHTMLAttributes<HTMLInputElement> {
     atributo: string

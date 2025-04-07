@@ -1,5 +1,5 @@
 import {EndPoint} from "@/type/root/root-types";
-import {MetodoHTTP} from "@/enum/root-enum";
+import {MetodoHTTP} from "@/sistema/_root/enums/root-enum";
 
 const rotas: EndPoint = {
     rotaAlternativa: {
@@ -19,11 +19,11 @@ export const usuarioEndPoints: EndPoint = {
         metodo: MetodoHTTP.POST
     },
     editar: {
-        caminho: (id: string) => `usuario/${id}`,
+        caminho: '/usuario/:id',
         metodo: MetodoHTTP.PUT
     },
     deletar: {
-        caminho: (id: string) => `usuario/${id}`,
+        caminho: '/usuario/:id',
         metodo: MetodoHTTP.DELETE
     }
 }
