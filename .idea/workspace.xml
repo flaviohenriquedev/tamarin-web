@@ -30,7 +30,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/MyProjects/tamarin/tamarin-web/src/sistema/recursos-humanos/modulos",
+    "last_opened_file_path": "D:/MyProjects/tamarin/tamarin-web/src/app/(autenticado)/adm/colaborador",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -47,11 +47,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\tamarin\tamarin-web\src\app\(autenticado)\adm\colaborador" />
+      <recent name="D:\MyProjects\tamarin\tamarin-web\src\app\(autenticado)\adm\usuario" />
       <recent name="D:\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\public" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\modules\_root\icones" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\core\icones" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\pages\login" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\layout\app\header" />
@@ -125,7 +125,7 @@
       <workItem from="1743911719722" duration="3583000" />
       <workItem from="1744022811096" duration="9624000" />
       <workItem from="1744032978190" duration="33840000" />
-      <workItem from="1744109642427" duration="10696000" />
+      <workItem from="1744109642427" duration="12359000" />
     </task>
     <servers />
   </component>
