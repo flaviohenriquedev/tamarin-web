@@ -2,31 +2,7 @@
 
 import {GiMonkey} from "react-icons/gi";
 
-import {rotas} from "@/sistema/_root/constantes/rotas";
-
 export function Desenvolvimento() {
-
-    function renderListaDeRotas() {
-        return rotas.map(rota => {
-            return (
-                <li key={rota.descricao} className={`
-                            item-rota-menu
-                            py-2
-                            rounded-lg
-                            
-                            hover:bg-primary
-                            hover:text-primary-content
-                            hover:cursor-pointer`}>
-                    <div className={`icone-rota-menu flex items-center justify-center`}>
-                        {rota.icone}
-                    </div>
-                    <div className={`descricao-rota-menu`}>
-                        {rota.descricao}
-                    </div>
-                </li>
-            )
-        })
-    }
 
     return (
         <div className={`w-full h-full`}>
@@ -40,7 +16,6 @@ export function Desenvolvimento() {
                     </div>
                     <div className={`container-rotas-menu p-2`}>
                         <ul className={`grid grid-cols-1 gap-1 lista-rotas-menu mt-4`}>
-                            {renderListaDeRotas()}
                         </ul>
                     </div>
                 </aside>

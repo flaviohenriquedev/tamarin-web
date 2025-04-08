@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import { createContext, ReactNode, useEffect, useState } from 'react'
-import {rotas} from "@/sistema/_root/constantes/rotas";
+import {rotas} from "@/sistema/recursos-humanos/rotas";
 import {RouteType} from "@/root/type/route-type";
 
 type Props = {
@@ -22,7 +22,9 @@ export const RootContextProvider = ({ children }: { children: ReactNode }) => {
         const rotaAtual = rotas.find((rota) => rota.href === pathname)
         if (rotaAtual) {
             setPaginaAberta(rotaAtual)
+            return
         }
+        setPaginaAberta({title: '', icon: <></>})
     }, [pathname])
 
     return (

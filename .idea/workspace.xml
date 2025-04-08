@@ -26,10 +26,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JavaScript Debug.debug.executor": "Run",
+    "JavaScript Debug.debug.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web/public",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/MyProjects/tamarin/tamarin-web/src/sistema/recursos-humanos/modulos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -39,18 +40,18 @@
     "nodejs_package_manager_path": "npm",
     "npm.build.executor": "Run",
     "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "ts.external.directory.path": "C:\\Users\\flavio.rosa\\MyProjects\\tamarin\\tamarin-web\\node_modules\\typescript\\lib",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "D:\\MyProjects\\tamarin\\tamarin-web\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\public" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\modules\_root\icones" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\core\icones" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\pages\login" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\layout\app\header" />
@@ -93,7 +94,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.426" />
       </set>
     </attachedChunks>
   </component>
@@ -124,6 +125,7 @@
       <workItem from="1743911719722" duration="3583000" />
       <workItem from="1744022811096" duration="9624000" />
       <workItem from="1744032978190" duration="33840000" />
+      <workItem from="1744109642427" duration="10696000" />
     </task>
     <servers />
   </component>

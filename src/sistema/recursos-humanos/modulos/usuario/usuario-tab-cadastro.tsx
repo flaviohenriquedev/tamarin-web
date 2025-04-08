@@ -19,7 +19,7 @@ export function UsuarioTabCadastro() {
         });
     }, [atualizarLista]);
 
-    // function handleEditar(entidade: Usuario) {
+    // function handleEditar(entidade: Colaborador) {
     //     setUsuario(entidade);
     // }
 
