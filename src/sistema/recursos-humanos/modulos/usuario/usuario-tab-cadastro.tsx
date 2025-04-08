@@ -1,0 +1,44 @@
+import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario";
+import {Table} from "@/componentes/data-display/table/table";
+import {usuarioConlunasListagem} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario-colunas-listagem";
+import {useCallback, useEffect, useState} from "react";
+import {UsuarioService} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario-service";
+import {PageContainer} from "@/componentes/ui/page-container/page-container";
+import {UsuarioFormularioCadastro} from "@/sistema/recursos-humanos/modulos/usuario/usuario-formulario-cadastro";
+
+const usuarioService = new UsuarioService();
+
+export function UsuarioTabCadastro() {
+    const [usuario, setUsuario] = useState<Usuario>(new Usuario());
+    const [listaUsuario, setListaUsuario] = useState<Usuario[]>([]);
+    const [atualizarLista, setAtualizarLista] = useState<boolean>(false);
+
+    useEffect(() => {
+        usuarioService.listar().then(result => {
+            setListaUsuario(result)
+        });
+    }, [atualizarLista]);
+
+    // function handleEditar(entidade: Usuario) {
+    //     setUsuario(entidade);
+    // }
+
+    function handleDeletar(entidade: Usuario) {
+        usuarioService.deletar(entidade.id).then();
+    }
+
+    const funcaoSalvar = useCallback(() => usuarioService.salvar(usuario), [usuario])
+    const callBack = useCallback(() => setAtualizarLista(prev => !prev), [])
+
+    const onSave = {funcaoSalvar, callBack}
+    return (
+        <PageContainer
+            onSave={onSave}
+            onModalOpen={() => setUsuario(new Usuario())}
+            formularioCadastro={<UsuarioFormularioCadastro usuario={usuario}/>}>
+            <Table colunas={usuarioConlunasListagem}
+                   lista={listaUsuario}
+                   funcaoDeletar={handleDeletar}/>
+        </PageContainer>
+    )
+}

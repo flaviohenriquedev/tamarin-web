@@ -1,6 +1,6 @@
 'use client'
 
-import {ButtonHTMLAttributes} from "react";
+import {ButtonHTMLAttributes, ReactNode} from "react";
 
 type TipoClasseBotao =
     'btn-neutral' |
@@ -14,11 +14,13 @@ type TipoClasseBotao =
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     descricao?: string
+    icone?: ReactNode;
     tipoClasse?: TipoClasseBotao
 }
 
 export function Button({
                            descricao,
+                           icone,
                            type,
                            disabled,
                            tipoClasse = 'btn-primary',
@@ -34,7 +36,10 @@ export function Button({
                         ${tipoClasse}
                         btn-sm`}
                 onClick={onClick}>
-            {descricao}
+            <div className={'flex items-center justify-between gap-x-2'}>
+                {descricao}
+                {icone}
+            </div>
         </button>
     )
 }

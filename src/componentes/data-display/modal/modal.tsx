@@ -9,7 +9,7 @@ type Props = {
 export function Modal({idModal, children, titulo}: Props) {
     return (
         <dialog id={idModal} className="modal">
-            <div className="modal-box">
+            <div className="modal-box max-w-5xl">
                 <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                 </form>

@@ -54,6 +54,19 @@ body {
 
 .navbar-app {
     grid-area: navbar-app;
+    display: grid;
+    grid-template-areas:
+            "nome-pagina usuario-componente";
+    grid-template-columns: 1fr 5rem;
+    align-content: center;
+}
+
+.nome-pagina {
+    grid-area: nome-pagina;
+}
+
+.usuario-componente {
+    grid-area: usuario-componente;
 }
 
 .conteudo-pagina {

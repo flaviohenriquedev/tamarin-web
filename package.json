@@ -11,6 +11,7 @@
   "dependencies": {
     "@rexxars/react-split-pane": "^1.0.0",
     "@types/lodash": "^4.17.16",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.6.3",
     "lodash": "^4.17.21",
     "next": "15.2.4",

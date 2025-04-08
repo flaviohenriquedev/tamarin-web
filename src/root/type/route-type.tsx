@@ -12,3 +12,8 @@ export type SubRoute = {
     href?: string,
     subRoute?: SubRoute[]
 }
+
+export type Tab = {
+    title: string
+    content: ReactNode
+}

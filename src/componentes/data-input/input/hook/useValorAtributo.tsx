@@ -4,7 +4,9 @@ import {useEffect, useState} from "react";
 import {get, set} from "lodash";
 import {EntidadePadrao} from "@/sistema/_root/entidades/EntidadePadrao";
 
-export function useValorAtributo<E extends EntidadePadrao>(entidade: E, atributo: string) {
+export function useValorAtributo<E extends EntidadePadrao>(
+    entidade: E,
+    atributo: string) {
     const [valorAtributo, setValorAtributo] = useState<string | number | readonly string[] | undefined>('');
 
     useEffect(() => {
@@ -30,5 +32,5 @@ export function useValorAtributo<E extends EntidadePadrao>(entidade: E, atributo
         if (atributo) set(entidade, atributo, valorTratado);
     }
 
-    return { valorAtributo, atribuirValor };
+    return {valorAtributo, atribuirValor};
 }

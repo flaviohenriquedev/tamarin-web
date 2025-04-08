@@ -15,10 +15,12 @@ export const InputString = ({
                                 type,
                                 placeholder,
                                 name,
+                                maxLength,
                                 disabled,
                                 entidade,
                                 atributo,
                                 onBlur,
+                                autoComplete,
                                 onKeyDown,
                                 required = false,
                                 value,
@@ -33,7 +35,9 @@ export const InputString = ({
             id={id}
             placeholder={placeholder}
             name={name}
+            maxLength={maxLength}
             type={type ? type : "text"}
+            autoComplete={autoComplete}
             disabled={disabled}
             value={value ? value : valorAtributo}
             onChange={onChange ? onChange : (e) => atribuirValor(e.target.value)}
