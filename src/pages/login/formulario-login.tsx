@@ -2,13 +2,13 @@
 
 import {FormEvent} from "react";
 import {useRouter} from "next/navigation";
-import {LabelContainer} from "@/componentes/data-display/label-container/label-container";
-import {InputString} from "@/componentes/data-input/input/input-string";
-import {LineContainer} from "@/componentes/data-display/line-container/line-container";
-import {Button} from "@/componentes/action/button";
+import {LabelContainer} from "@/componentes/ui/data-display/label-container/label-container";
+import {InputString} from "@/componentes/ui/data-input/input/input-string";
+import {Button} from "@/componentes/ui/action/button";
 import {signIn} from "next-auth/react";
 import {toast} from "react-toastify";
 import {Autenticacao} from "@/sistema/_root/entidades/Autenticacao";
+import {LineContent} from "@/componentes/ui/data-display/line-content/line-content";
 
 export function FormularioLogin() {
     const router = useRouter();
@@ -40,9 +40,9 @@ export function FormularioLogin() {
                 <InputString entidade={autenticacao} atributo={`senha`} name={`senha`} type={`password`}/>
             </LabelContainer>
 
-            <LineContainer>
+            <LineContent>
                 <Button descricao={`Entrar`}/>
-            </LineContainer>
+            </LineContent>
         </form>
     );
 }

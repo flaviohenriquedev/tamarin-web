@@ -10,7 +10,7 @@ type Props = {
 export function LineContent({children, justifyContent, alignItems}: Props) {
 
     const style = clsx(
-        'flex w-full mb-6 gap-2',
+        'flex w-full gap-2 mb-2',
         justifyContent === 'center' ? 'justify-center'
             : justifyContent === 'end' ? 'justify-end'
                 : 'justify-start',

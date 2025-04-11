@@ -1,15 +1,20 @@
-import {ReactNode} from "react";
-import {RootContextProvider} from "@/sistema/_root/context/root-context";
-import {getServerSession} from "next-auth";
-import {nextAuthOptions} from "@/app/api/auth/[...nextauth]/options";
-import {redirect} from "next/navigation";
+'use client'
 
-export default async function LayoutAutenticacao({children}: { children: ReactNode }) {
-    const session = await getServerSession(nextAuthOptions)
+import { ReactNode, useEffect } from "react";
+import { RootContextProvider } from "@/sistema/_root/context/root-context";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
-    if (!session?.user?.token) {
-        redirect("/")
-    }
+export default function LayoutAutenticacao({ children }: { children: ReactNode }) {
+    const { data: session, status } = useSession();
+    const router = useRouter();
+
+    useEffect(() => {
+        if (status === "loading") return;
+        if (!session?.user?.token) {
+            router.replace("/login");
+        }
+    }, [session, status, router]);
 
     return (
         <RootContextProvider>
@@ -17,5 +22,5 @@ export default async function LayoutAutenticacao({children}: { children: ReactNo
                 {children}
             </div>
         </RootContextProvider>
-    )
+    );
 }

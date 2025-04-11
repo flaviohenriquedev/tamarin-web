@@ -5,7 +5,7 @@ import {RxExit} from "react-icons/rx";
 import React, {useState} from "react";
 import {signOut} from "next-auth/react";
 import {useRouter} from "next/navigation";
-import {closeModal, openModal} from "@/componentes/data-display/modal/modal-funcoes";
+import {closeModal, openModal} from "@/componentes/ui/data-display/modal/modal-funcoes";
 import Profile from "../../../../../public/profile.jpg";
 import Image from "next/image";
 
@@ -47,7 +47,6 @@ export const UserComponent = ({nomeUsuario}: Props) => {
         //         });
         // }
         closeModal('alterar_senha')
-        console.log('alterar_senha')
     };
 
     async function logout() {

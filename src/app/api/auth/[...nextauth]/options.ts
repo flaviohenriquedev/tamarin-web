@@ -18,21 +18,15 @@ export const nextAuthOptions = {
                 },
             },
             async authorize(credentials) {
+                const service = new LoginService();
+                const usuario = await service.login(credentials?.email, credentials?.senha);
 
-                const service: LoginService = new LoginService();
-
-                try {
-                    const response = await service.login(credentials?.email, credentials?.senha)
-                    if (response) {
-                        return response
-                    } else {
-                        return null
-                    }
-                } catch (error) {
-                    console.log(error);
+                if (usuario && usuario.id) {
+                    return usuario;
                 }
+
                 return null;
-            },
+            }
         }),
     ],
     pages: {
@@ -40,12 +34,12 @@ export const nextAuthOptions = {
         signOut: '/',
     },
     callbacks: {
-        async jwt({token, user}: any) {
+        async jwt({ token, user }: any) {
             return {...token, ...user}
         },
         async session({ session, token }: any) {
-            session.user = token as any;
+            session.user = token;
             return session;
-        },
+        }
     },
 };

@@ -24,44 +24,44 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.debug.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/MyProjects/tamarin/tamarin-web/src/app/(autenticado)/adm/colaborador",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "D:\\MyProjects\\tamarin\\tamarin-web\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.debug.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web/src/componentes/ui/data-display/line-content&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Debug&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\flavio.rosa\\MyProjects\\tamarin\\tamarin-web\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\ui\data-display\line-content" />
       <recent name="D:\MyProjects\tamarin\tamarin-web\src\app\(autenticado)\adm\colaborador" />
       <recent name="D:\MyProjects\tamarin\tamarin-web\src\app\(autenticado)\adm\usuario" />
       <recent name="D:\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\public" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\modules\_root\icones" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\layout\app\header" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\_root\constantes" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\modules\usuario\elementos" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\_root\types" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\_root\service" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\ui\data-display" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\layout\app" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\ui" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="JavaScript Debug.debug">
     <configuration name="debug" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -94,7 +94,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.426" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -126,6 +126,10 @@
       <workItem from="1744022811096" duration="9624000" />
       <workItem from="1744032978190" duration="33840000" />
       <workItem from="1744109642427" duration="12359000" />
+      <workItem from="1744152089051" duration="13741000" />
+      <workItem from="1744195380186" duration="4790000" />
+      <workItem from="1744316813998" duration="1740000" />
+      <workItem from="1744337097813" duration="5330000" />
     </task>
     <servers />
   </component>

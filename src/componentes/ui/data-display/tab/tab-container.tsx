@@ -1,6 +1,6 @@
-import {TabItem} from "@/componentes/data-display/tab/tab-item";
+import {TabItem} from "@/componentes/ui/data-display/tab/tab-item";
 import {useState} from "react";
-import {Tab} from "@/root/type/route-type";
+import {Tab} from "@/sistema/_root/types/root-types";
 
 type Props = {
     tabs: Tab[]

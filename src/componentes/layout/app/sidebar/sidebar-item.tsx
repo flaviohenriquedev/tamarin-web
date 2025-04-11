@@ -1,9 +1,9 @@
 import {IoIosArrowDown} from "react-icons/io";
-import {RouteType} from "@/root/type/route-type";
 import {useState} from "react";
 import {useRouter} from "next/navigation";
 import {SidebarSubitem} from "@/componentes/layout/app/sidebar/sidebar-subitem";
 import { motion, AnimatePresence } from 'framer-motion'
+import {RouteType} from "@/sistema/_root/types/root-types";
 
 type Props = {
     rota: RouteType,

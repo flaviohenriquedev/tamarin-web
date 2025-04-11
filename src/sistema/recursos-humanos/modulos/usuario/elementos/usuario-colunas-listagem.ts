@@ -1,4 +1,4 @@
-import {Coluna} from "@/type/root/root-types";
+import {Coluna} from "@/sistema/_root/types/root-types";
 import {TipoDadoEnum} from "@/sistema/_root/enums/root-enum";
 
 export const usuarioConlunasListagem: Coluna[] = [

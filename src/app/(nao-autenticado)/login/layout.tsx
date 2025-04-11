@@ -1,18 +1,22 @@
-import React from "react";
-import {getServerSession} from "next-auth";
-import {nextAuthOptions} from "@/app/api/auth/[...nextauth]/options";
-import {redirect} from "next/navigation";
+'use client'
 
-export default async function LayoutLogin({children}: { children: React.ReactNode }) {
-    const session = await getServerSession(nextAuthOptions)
+import React, { useEffect } from "react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
-    if (session?.user?.token) {
-        redirect("/adm")
-    }
+export default function LayoutLogin({ children }: { children: React.ReactNode }) {
+    const { data: session } = useSession();
+    const router = useRouter();
+
+    useEffect(() => {
+        if (session?.user?.token) {
+            router.replace("/adm");
+        }
+    }, [session, router]);
+
     return (
         <div className={`w-screen h-screen bg-background-login`}>
             {children}
         </div>
-    )
-
+    );
 }

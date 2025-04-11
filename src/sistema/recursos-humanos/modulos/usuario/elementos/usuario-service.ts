@@ -1,4 +1,4 @@
-import {CrudService} from "@/crud/crud-service";
+import {CrudService} from "@/sistema/_root/service/crud-service";
 import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario";
 import {usuarioEndPoints} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario-end-points";
 

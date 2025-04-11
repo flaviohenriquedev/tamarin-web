@@ -1,15 +1,15 @@
 import {FormEvent, ReactNode, useEffect, useState} from "react";
-import {LineContent} from "@/componentes/ui/line-content/line-content";
-import {Button} from "@/componentes/action/button";
+import {LineContent} from "@/componentes/ui/data-display/line-content/line-content";
+import {Button} from "@/componentes/ui/action/button";
 import {HiOutlinePlus} from "react-icons/hi2";
-import {Modal} from "@/componentes/data-display/modal/modal";
-import {closeModal, openModal} from "@/componentes/data-display/modal/modal-funcoes";
+import {Modal} from "@/componentes/ui/data-display/modal/modal";
+import {closeModal, openModal} from "@/componentes/ui/data-display/modal/modal-funcoes";
 
 type Props = {
     children: ReactNode,
     tituloPersonalizadoBotaoNovoCadastro?: string,
     formularioCadastro?: ReactNode,
-    onSave: {funcaoSalvar: () => Promise<void>, callBack: () => void},
+    onSave: { funcaoSalvar: () => Promise<void>, callBack: () => void },
     onModalOpen?: () => void
 }
 
@@ -61,7 +61,7 @@ export function PageContainer({
                 <form onSubmit={onSubmit}>
                     {formularioCadastro}
 
-                    <LineContent>
+                    <LineContent justifyContent={`end`}>
                         <Button
                             type={'submit'}
                             descricao={'Salvar'}/>

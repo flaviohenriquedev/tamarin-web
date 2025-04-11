@@ -1,5 +1,5 @@
 import {GoDotFill} from "react-icons/go";
-import {SubRoute} from "@/root/type/route-type";
+import {SubRoute} from "@/sistema/_root/types/root-types";
 
 export function SidebarSubitem({subRota}: {subRota: SubRoute}) {
     return (

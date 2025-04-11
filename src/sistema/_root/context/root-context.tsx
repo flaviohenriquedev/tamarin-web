@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation'
 import { createContext, ReactNode, useEffect, useState } from 'react'
 import {rotas} from "@/sistema/recursos-humanos/rotas";
-import {RouteType} from "@/root/type/route-type";
+import {RouteType} from "@/sistema/_root/types/root-types";
 
 type Props = {
     paginaAberta: RouteType

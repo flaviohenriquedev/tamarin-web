@@ -1,7 +1,6 @@
 'use client'
 
-import {ReactNode, useContext} from "react";
-import {RootContext} from "@/sistema/_root/context/root-context";
+import {ReactNode} from "react";
 import {HeaderApp} from "@/componentes/layout/app/header/header";
 import {Sidebar} from "@/componentes/layout/app/sidebar/sidebar";
 

@@ -4,16 +4,7 @@
 
 /*noinspection CssInvalidAtRule*/
 @plugin "daisyui" {
-    themes: light --default;
-}
-
-@plugin "daisyui/theme" {
-    name: "light";
-    default: true;
-    --color-primary: #1c1c1c;
-    --color-secondary: #daddd8;
-    --color-primary-content: #daddd8;
-    --color-base-100: white
+    themes: light --default, dark --prefersdark, cupcake;
 }
 
 body {
@@ -105,4 +96,8 @@ body {
 
 .arrow-rota-menu {
     grid-area: arrow-rota-menu;
+}
+
+.flex-fill > * {
+    flex: 1;
 }

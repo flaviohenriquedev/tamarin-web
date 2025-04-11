@@ -1,8 +1,9 @@
-import {LabelContainer} from "@/componentes/data-display/label-container/label-container";
-import {InputString} from "@/componentes/data-input/input/input-string";
-import {LineContent} from "@/componentes/ui/line-content/line-content";
+import {LabelContainer} from "@/componentes/ui/data-display/label-container/label-container";
+import {InputString} from "@/componentes/ui/data-input/input/input-string";
+import {LineContent} from "@/componentes/ui/data-display/line-content/line-content";
 import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario";
 import {Util} from "@/util/util";
+import {LineContentFill} from "@/componentes/ui/data-display/line-content/line-content-fill";
 
 type Props = {
     usuario: Usuario;
@@ -10,7 +11,7 @@ type Props = {
 
 export function UsuarioFormularioCadastro({usuario}: Props) {
     return (
-        <LineContent>
+        <LineContentFill>
             <LabelContainer descricao={`Nome Usuário`}>
                 <InputString
                     entidade={usuario}
@@ -33,6 +34,6 @@ export function UsuarioFormularioCadastro({usuario}: Props) {
                     maxLength={11}
                     atributo={`cpf`}/>
             </LabelContainer>
-        </LineContent>
+        </LineContentFill>
     )
 }

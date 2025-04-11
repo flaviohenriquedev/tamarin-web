@@ -1,8 +1,8 @@
 'use client'
 
 import {useCallback, useEffect, useState} from "react";
-import {PageContainer} from "@/componentes/ui/page-container/page-container";
-import {Table} from "@/componentes/data-display/table/table";
+import {PageContainer} from "@/componentes/layout/app/page-container/page-container";
+import {Table} from "@/componentes/ui/data-display/table/table";
 import {ColaboradorService} from "@/sistema/recursos-humanos/modulos/colaborador/elementos/colaborador-service";
 import {Colaborador} from "@/sistema/recursos-humanos/modulos/colaborador/elementos/colaborador";
 import {

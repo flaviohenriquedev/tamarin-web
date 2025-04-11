@@ -1,7 +1,8 @@
-import {LabelContainer} from "@/componentes/data-display/label-container/label-container";
-import {InputString} from "@/componentes/data-input/input/input-string";
-import {LineContent} from "@/componentes/ui/line-content/line-content";
+import {LabelContainer} from "@/componentes/ui/data-display/label-container/label-container";
+import {InputString} from "@/componentes/ui/data-input/input/input-string";
+import {LineContent} from "@/componentes/ui/data-display/line-content/line-content";
 import {Colaborador} from "@/sistema/recursos-humanos/modulos/colaborador/elementos/colaborador";
+import {LineContentFill} from "@/componentes/ui/data-display/line-content/line-content-fill";
 
 type Props = {
     colaborador: Colaborador;
@@ -10,7 +11,7 @@ type Props = {
 export function ColaboradorFormularioCadastro({colaborador}: Props) {
     return (
         <>
-            <LineContent>
+            <LineContentFill>
                 <LabelContainer descricao={`Nome Usuário`}>
                     <InputString
                         entidade={colaborador}
@@ -31,9 +32,6 @@ export function ColaboradorFormularioCadastro({colaborador}: Props) {
                         atributo={`email`}
                         type={`email`}/>
                 </LabelContainer>
-            </LineContent>
-
-            <LineContent>
                 <LabelContainer descricao={`Data Nascimento`}>
                     <InputString
                         entidade={colaborador}
@@ -41,21 +39,7 @@ export function ColaboradorFormularioCadastro({colaborador}: Props) {
                         atributo={`dataNascimento`}
                         type={`date`}/>
                 </LabelContainer>
-                <LabelContainer descricao={`CPF`}>
-                    <InputString
-                        entidade={colaborador}
-                        placeholder={`CPF`}
-                        maxLength={11}
-                        atributo={`cpf`}/>
-                </LabelContainer>
-                <LabelContainer descricao={`Email`}>
-                    <InputString
-                        entidade={colaborador}
-                        placeholder={`Email Válido`}
-                        atributo={`email`}
-                        type={`email`}/>
-                </LabelContainer>
-            </LineContent>
+            </LineContentFill>
         </>
     )
 }

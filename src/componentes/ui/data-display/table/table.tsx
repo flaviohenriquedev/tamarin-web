@@ -1,7 +1,7 @@
-import {Coluna} from "@/type/root/root-types";
-import {Modal} from "@/componentes/data-display/modal/modal";
-import {Button} from "@/componentes/action/button";
-import {closeModal, openModal} from "@/componentes/data-display/modal/modal-funcoes";
+import {Coluna} from "@/sistema/_root/types/root-types";
+import {Modal} from "@/componentes/ui/data-display/modal/modal";
+import {Button} from "@/componentes/ui/action/button";
+import {closeModal, openModal} from "@/componentes/ui/data-display/modal/modal-funcoes";
 import {useCallback, useState} from "react";
 import {EntidadePadrao} from "@/sistema/_root/entidades/EntidadePadrao";
 
@@ -57,7 +57,6 @@ export function Table<E extends EntidadePadrao>({lista, colunas, funcaoEditar, f
     }
 
     function renderRowItem(row: any) {
-        console.log(row)
         return colunas.map((coluna, index) => {
             return (
                 <td key={`${index.toString()}-${coluna.descricao}`}>{row[coluna.field]}</td>

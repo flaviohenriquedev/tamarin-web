@@ -1,4 +1,4 @@
-import {CrudService} from "@/crud/crud-service";
+import {CrudService} from "@/sistema/_root/service/crud-service";
 import {Colaborador} from "@/sistema/recursos-humanos/modulos/colaborador/elementos/colaborador";
 import {colaboradorEndPoints} from "@/sistema/recursos-humanos/modulos/colaborador/elementos/colaborador-end-points";
 
