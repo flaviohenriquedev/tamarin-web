@@ -13,7 +13,7 @@ export default function LoadingAdmin({children}: { children: ReactNode }) {
                 <div className={`container-pagina`}>
                     <HeaderApp />
 
-                    <main className={`conteudo-pagina p-5 overflow-y-scroll h-screen pb-50`}>
+                    <main className={`conteudo-pagina p-5 pb-50`}>
                         {children}
                     </main>
                 </div>

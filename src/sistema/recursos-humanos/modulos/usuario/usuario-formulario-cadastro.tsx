@@ -1,7 +1,7 @@
 import {LabelContainer} from "@/componentes/ui/data-display/label-container/label-container";
 import {InputString} from "@/componentes/ui/data-input/input/input-string";
 import {LineContent} from "@/componentes/ui/data-display/line-content/line-content";
-import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario";
+import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/ts/usuario";
 import {Util} from "@/util/util";
 import {LineContentFill} from "@/componentes/ui/data-display/line-content/line-content-fill";
 

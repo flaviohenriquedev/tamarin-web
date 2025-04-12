@@ -1,5 +1,5 @@
 import {EndPoint} from "@/sistema/_root/types/root-types";
-import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario";
+import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/ts/usuario";
 import {baseUrl} from "@/sistema/_root/constantes";
 
 export class AuthService {

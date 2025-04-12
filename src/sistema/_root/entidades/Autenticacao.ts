@@ -1,4 +1,4 @@
-import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario";
+import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/ts/usuario";
 
 export class Autenticacao {
     email: string;

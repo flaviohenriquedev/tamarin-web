@@ -18,6 +18,7 @@ export type DetalheEndPoint = {
 export type Coluna = {
     descricao: string;
     field: string;
+    urlFotoPerfil?: string;
     tipoDado: TipoDadoEnum;
 }
 

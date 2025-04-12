@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3495b219-708e-4385-bc3c-ebd8c0c08e72" name="Changes" comment="" />
+    <list default="true" id="3495b219-708e-4385-bc3c-ebd8c0c08e72" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/card-detalhado-usuario.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/card-usuario.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(autenticado)/adm/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/auth-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/auth-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/entidades/Autenticacao.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/entidades/Autenticacao.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/types/next-auth.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/types/next-auth.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/types/root-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/types/root-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/elementos/usuario-colunas-listagem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario-colunas-listagem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/elementos/usuario-end-points.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario-end-points.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/elementos/usuario-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/elementos/usuario.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-formulario-cadastro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-formulario-cadastro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-tab-cadastro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-tab-cadastro.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +37,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2uxDPDD1ZwgGZhh1WO78FxYmLBU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="openDirectoriesWithSingleClick" value="true" />
@@ -28,9 +49,10 @@
   &quot;keyToString&quot;: {
     &quot;JavaScript Debug.debug.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web/src/componentes/ui/data-display/line-content&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -54,11 +76,11 @@
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\app\(autenticado)\adm\dev" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\_root\types" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\_root\service" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\ui\data-display" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\layout\app" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\ui" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.debug">
@@ -129,12 +151,26 @@
       <workItem from="1744152089051" duration="13741000" />
       <workItem from="1744195380186" duration="4790000" />
       <workItem from="1744316813998" duration="1740000" />
-      <workItem from="1744337097813" duration="5330000" />
+      <workItem from="1744337097813" duration="5740000" />
+      <workItem from="1744367692264" duration="2450000" />
+      <workItem from="1744379157162" duration="3777000" />
+      <workItem from="1744412256965" duration="4949000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>

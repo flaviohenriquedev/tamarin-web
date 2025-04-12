@@ -4,7 +4,7 @@
 
 /*noinspection CssInvalidAtRule*/
 @plugin "daisyui" {
-    themes: light --default, dark --prefersdark, cupcake;
+    themes: light --default
 }
 
 body {
@@ -100,4 +100,19 @@ body {
 
 .flex-fill > * {
     flex: 1;
+}
+
+.container-usuario {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: "lista-usuario card-usuario";
+    grid-template-columns: 1fr auto;
+}
+
+.lista-usuario {
+    grid-area: lista-usuario;
+}
+
+.card-usuario {
+    grid-area: card-usuario;
 }

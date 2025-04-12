@@ -1,10 +1,10 @@
-import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario";
+import {Usuario} from "@/sistema/recursos-humanos/modulos/usuario/ts/usuario";
 import {Table} from "@/componentes/ui/data-display/table/table";
-import {usuarioConlunasListagem} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario-colunas-listagem";
+import {usuarioConlunasListagem} from "@/sistema/recursos-humanos/modulos/usuario/ts/usuario-colunas-listagem";
 import {useCallback, useEffect, useState} from "react";
 import {PageContainer} from "@/componentes/layout/app/page-container/page-container";
 import {UsuarioFormularioCadastro} from "@/sistema/recursos-humanos/modulos/usuario/usuario-formulario-cadastro";
-import {UsuarioService} from "@/sistema/recursos-humanos/modulos/usuario/elementos/usuario-service";
+import {UsuarioService} from "@/sistema/recursos-humanos/modulos/usuario/ts/usuario-service";
 
 const usuarioService = new UsuarioService();
 
