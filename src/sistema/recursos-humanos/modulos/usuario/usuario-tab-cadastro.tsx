@@ -10,12 +10,12 @@ const usuarioService = new UsuarioService();
 
 export function UsuarioTabCadastro() {
     const [usuario, setUsuario] = useState<Usuario>(new Usuario());
-    const [listaUsuario, setListaUsuario] = useState<Usuario[]>([]);
+    const [listaEntidade, setListaEntidade] = useState<Usuario[]>([]);
     const [atualizarLista, setAtualizarLista] = useState<boolean>(false);
 
     useEffect(() => {
         usuarioService.listar().then(result => {
-            setListaUsuario(result)
+            setListaEntidade(result)
         });
     }, [atualizarLista]);
 
@@ -37,7 +37,7 @@ export function UsuarioTabCadastro() {
             onModalOpen={() => setUsuario(new Usuario())}
             formularioCadastro={<UsuarioFormularioCadastro usuario={usuario}/>}>
             <Table colunas={usuarioConlunasListagem}
-                   lista={listaUsuario}
+                   lista={listaEntidade}
                    funcaoDeletar={handleDeletar}/>
         </PageContainer>
     )

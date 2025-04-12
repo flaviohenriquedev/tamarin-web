@@ -1,6 +1,6 @@
-import {EntidadePadrao} from "@/sistema/_root/entidades/EntidadePadrao";
+import {EntidadeCliente} from "@/sistema/_root/entidades/EntidadeCliente";
 
-export class Usuario extends EntidadePadrao {
+export class Usuario extends EntidadeCliente {
     nome: string;
     email: string;
     cpf: string;

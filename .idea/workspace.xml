@@ -4,25 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3495b219-708e-4385-bc3c-ebd8c0c08e72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/card-detalhado-usuario.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/card-usuario.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/types.ts" afterDir="false" />
+    <list default="true" id="3495b219-708e-4385-bc3c-ebd8c0c08e72" name="Changes" comment="Criando componente de listagem de colaboradores">
+      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/cliente/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/departamento/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/componentes/ui/data-display/navigation/breadcrumb/breadcrumb.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/componentes/ui/data-input/input-filter/Input-filter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/_root/context/breadcrumb-context.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/_root/entidades/EntidadeCliente.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/cliente/cliente-formulario-cadastro.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/cliente/cliente-pagina-inicial.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/cliente/ts/cliente-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/cliente/ts/cliente.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/ts/colaborador-colunas-listagem.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/ts/colaborador-end-points.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/departamento/departamento-formulario-cadastro.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/departamento/departamento-pagina-inicial.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/departamento/ts/departamento-colunas-listagem.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/departamento/ts/departamento-end-points.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/departamento/ts/departamento-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/departamento/ts/departamento.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/dev/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(autenticado)/adm/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(autenticado)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(autenticado)/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/auth-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/auth-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/_root/entidades/Autenticacao.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/entidades/Autenticacao.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/_root/types/next-auth.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/types/next-auth.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/page-container/page-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/page-container/page-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-subitem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-subitem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/ui/data-display/line-content/line-content-fill.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/ui/data-display/line-content/line-content-fill.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/ui/data-display/line-content/line-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/ui/data-display/line-content/line-content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/componente-login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/componente-login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/formulario-login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/formulario-login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/context/root-context.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/helper/request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/helper/request.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/providers/providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/providers/providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/service/crud-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/service/crud-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sistema/_root/types/root-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/types/root-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/elementos/usuario-colunas-listagem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario-colunas-listagem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/elementos/usuario-end-points.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario-end-points.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/elementos/usuario-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/elementos/usuario.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-formulario-cadastro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-formulario-cadastro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/colaborador-formulario-cadastro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/colaborador-formulario-cadastro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/colaborador-pagina-inicial.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/colaborador-pagina-inicial.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/elementos/colaborador-colunas-listagem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/cliente/ts/cliente-colunas-listagem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/elementos/colaborador-end-points.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/cliente/ts/cliente-end-points.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/elementos/colaborador-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/ts/colaborador-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/elementos/colaborador.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/colaborador/ts/colaborador.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/ts/usuario.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-tab-cadastro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-tab-cadastro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/rotas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/rotas-recursos-humanos.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +80,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web/src/componentes/ui/data-input&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -69,18 +97,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\ui\data-display\line-content" />
-      <recent name="D:\MyProjects\tamarin\tamarin-web\src\app\(autenticado)\adm\colaborador" />
-      <recent name="D:\MyProjects\tamarin\tamarin-web\src\app\(autenticado)\adm\usuario" />
-      <recent name="D:\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\public" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\ui\data-input" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos\cliente" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos\cliente\ts" />
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\_root" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\recursos-humanos\modulos\cliente\ts" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\app\(autenticado)\adm\dev" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\_root\types" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\sistema\_root\service" />
       <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\ui\data-display" />
-      <recent name="C:\Users\flavio.rosa\MyProjects\tamarin\tamarin-web\src\componentes\layout\app" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.debug">
@@ -155,7 +183,19 @@
       <workItem from="1744367692264" duration="2450000" />
       <workItem from="1744379157162" duration="3777000" />
       <workItem from="1744412256965" duration="4949000" />
+      <workItem from="1744417259822" duration="53000" />
+      <workItem from="1744449537323" duration="30055000" />
+      <workItem from="1744501322579" duration="64000" />
     </task>
+    <task id="LOCAL-00001" summary="Criando componente de listagem de colaboradores">
+      <option name="closed" value="true" />
+      <created>1744417302489</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744417302489</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,5 +216,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Criando componente de listagem de colaboradores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando componente de listagem de colaboradores" />
   </component>
 </project>

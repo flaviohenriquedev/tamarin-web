@@ -9,6 +9,7 @@ import {signIn} from "next-auth/react";
 import {toast} from "react-toastify";
 import {Autenticacao} from "@/sistema/_root/entidades/Autenticacao";
 import {LineContent} from "@/componentes/ui/data-display/line-content/line-content";
+import {LineContentFill} from "@/componentes/ui/data-display/line-content/line-content-fill";
 
 export function FormularioLogin() {
     const router = useRouter();
@@ -29,8 +30,8 @@ export function FormularioLogin() {
     }
 
     return (
-        <form onSubmit={handleSubmit} className={`flex w-full h-full flex-col p-4`}>
-            <div>Tela de login</div>
+        <form onSubmit={handleSubmit} className={`flex w-full h-full flex-col p-10 rounded-sm`}>
+            <span className={`text-[20pt] font-bold`}>Login</span>
 
             <LabelContainer descricao={`Email`}>
                 <InputString entidade={autenticacao} atributo={`email`} name={`email`} type={"email"}/>
@@ -40,9 +41,9 @@ export function FormularioLogin() {
                 <InputString entidade={autenticacao} atributo={`senha`} name={`senha`} type={`password`}/>
             </LabelContainer>
 
-            <LineContent>
+            <LineContentFill className={`mt-5`}>
                 <Button descricao={`Entrar`}/>
-            </LineContent>
+            </LineContentFill>
         </form>
     );
 }

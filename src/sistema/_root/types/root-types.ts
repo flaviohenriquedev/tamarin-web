@@ -24,18 +24,19 @@ export type Coluna = {
 
 export type RouteType = {
     title: string
-    icon: ReactNode
+    icon?: ReactNode
     href?: string
-    subRoute?: SubRoute[]
-}
-
-export type SubRoute = {
-    title: string,
-    href?: string,
-    subRoute?: SubRoute[]
+    breadcrumbRef: string
+    subRoute?: RouteType[]
 }
 
 export type Tab = {
     title: string
     content: ReactNode
+}
+
+export type BreadcrumbType = {
+    title: string;
+    icon?: ReactNode
+    href?: string
 }

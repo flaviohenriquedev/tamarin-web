@@ -1,26 +1,23 @@
 'use client'
 
 import { ReactNode, useEffect } from "react";
-import { RootContextProvider } from "@/sistema/_root/context/root-context";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 export default function LayoutAutenticacao({ children }: { children: ReactNode }) {
-    const { data: session, status } = useSession();
+    const { status } = useSession();
     const router = useRouter();
 
     useEffect(() => {
-        if (status === "loading") return;
-        if (!session?.user?.token) {
+        if (status === 'unauthenticated') {
             router.replace("/login");
         }
-    }, [session, status, router]);
+    }, [status, router]);
 
+    if (status === "loading" || status === 'unauthenticated') return null;
     return (
-        <RootContextProvider>
-            <div>
-                {children}
-            </div>
-        </RootContextProvider>
+        <div>
+            {children}
+        </div>
     );
 }

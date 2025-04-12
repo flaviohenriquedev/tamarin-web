@@ -7,7 +7,7 @@ export async function request<T>(
     endpoint: string,
     method: MetodoHTTP,
     body?: any
-): Promise<T> {
+): Promise<T | null> {
     const session = await getSession();
     const token = session?.user?.token;
 
@@ -26,10 +26,12 @@ export async function request<T>(
         const mensagemErro = {
             rota: endpoint,
             metodo: method
-        }
-        toast.error("Ocorreu um erro na requisição -> " + mensagemErro);
+        };
+        toast.error("Ocorreu um erro na requisição -> " + JSON.stringify(mensagemErro));
         throw new Error(`Erro: ${response.status} ${response.statusText}`);
     }
 
-    return response.json();
+    const text = await response.text();
+    return text ? JSON.parse(text) : null;
 }
+

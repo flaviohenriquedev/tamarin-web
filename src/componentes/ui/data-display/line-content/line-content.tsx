@@ -5,9 +5,10 @@ type Props = {
     children: ReactNode;
     justifyContent?: 'start' | 'center' | 'end';
     alignItems?: 'start' | 'center' | 'end';
+    className?: string;
 }
 
-export function LineContent({children, justifyContent, alignItems}: Props) {
+export function LineContent({children, justifyContent, alignItems, className}: Props) {
 
     const style = clsx(
         'flex w-full gap-2 mb-2',
@@ -21,7 +22,7 @@ export function LineContent({children, justifyContent, alignItems}: Props) {
     )
 
     return (
-        <div className={style}>
+        <div className={`${style} ${className}`}>
             {children}
         </div>
     )

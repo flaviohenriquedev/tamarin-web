@@ -5,8 +5,6 @@ import {CardUsuario} from "@/app/(autenticado)/adm/dev/card-usuario";
 import {infosUsuario} from "@/app/(autenticado)/adm/dev/data";
 import {InfoUsuario} from "@/app/(autenticado)/adm/dev/types";
 import {useState} from "react";
-import {AnimatePresence, motion} from "framer-motion";
-
 
 export default function PaginaDev() {
 

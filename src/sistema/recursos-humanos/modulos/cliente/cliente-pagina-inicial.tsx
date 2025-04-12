@@ -12,16 +12,19 @@ import {
     colaboradorConlunasListagem
 } from "@/sistema/recursos-humanos/modulos/colaborador/ts/colaborador-colunas-listagem";
 import {Cliente} from "@/sistema/recursos-humanos/modulos/cliente/ts/cliente";
+import {ClienteService} from "@/sistema/recursos-humanos/modulos/cliente/ts/cliente-service";
+import {clienteColunasListagem} from "@/sistema/recursos-humanos/modulos/cliente/ts/cliente-colunas-listagem";
+import {ClienteFormularioCadastro} from "@/sistema/recursos-humanos/modulos/cliente/cliente-formulario-cadastro";
 
-const colaboradorService = new ColaboradorService();
+const clienteService = new ClienteService();
 
-export function ColaboradorPaginaInicial() {
-    const [entidade, setEntidade] = useState<Colaborador>(new Colaborador());
-    const [listaEntidade, setListaEntidade] = useState<Colaborador[]>([]);
+export function ClientePaginaInicial() {
+    const [entidade, setEntidade] = useState<Cliente>(new Cliente());
+    const [listaEntidade, setListaEntidade] = useState<Cliente[]>([]);
     const [atualizarLista, setAtualizarLista] = useState<boolean>(false);
 
     useEffect(() => {
-        colaboradorService.listar().then(result => {
+        clienteService.listar().then(result => {
             setListaEntidade(result)
         });
     }, [atualizarLista]);
@@ -30,20 +33,20 @@ export function ColaboradorPaginaInicial() {
     //     setUsuario(entidade);
     // }
 
-    function handleDeletar(entidade: Colaborador) {
-        colaboradorService.deletar(entidade.id).then();
+    function handleDeletar(entidade: Cliente) {
+        clienteService.deletar(entidade.id).then();
     }
 
-    const funcaoSalvar = useCallback(() => colaboradorService.salvar(entidade), [entidade])
+    const funcaoSalvar = useCallback(() => clienteService.salvar(entidade), [entidade])
     const callBack = useCallback(() => setAtualizarLista(prev => !prev), [])
 
     const onSave = {funcaoSalvar, callBack}
     return (
         <PageContainer
             onSave={onSave}
-            onModalOpen={() => setEntidade(new Colaborador())}
-            formularioCadastro={<ColaboradorFormularioCadastro colaborador={entidade}/>}>
-            <Table colunas={colaboradorConlunasListagem}
+            onModalOpen={() => setEntidade(new Cliente())}
+            formularioCadastro={<ClienteFormularioCadastro cliente={entidade}/>}>
+            <Table colunas={clienteColunasListagem}
                    lista={listaEntidade}
                    funcaoDeletar={handleDeletar}/>
         </PageContainer>

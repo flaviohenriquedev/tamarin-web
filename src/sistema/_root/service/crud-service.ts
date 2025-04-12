@@ -11,17 +11,18 @@ export class CrudService<E extends EntidadePadrao> {
 
     async listar(): Promise<E[]> {
         if (!this.endpoint.listar) return [];
-        return await request<E[]>(this.endpoint.listar.caminho, this.endpoint.listar.metodo);
+        const resultado = await request<E[]>(this.endpoint.listar.caminho, this.endpoint.listar.metodo);
+        return resultado ?? [];
     }
 
-    async salvar(data: E): Promise<void> {
-        if (!this.endpoint.salvar) return;
-        await request(this.endpoint.salvar.caminho, this.endpoint.salvar.metodo, data);
+    async salvar(data: E): Promise<E | null> {
+        if (!this.endpoint.salvar) return null;
+        return await request<E | null>(this.endpoint.salvar.caminho, this.endpoint.salvar.metodo, data);
     }
 
     async atualizar(id: string | number, data: E): Promise<E | null> {
         if (!this.endpoint.atualizar) return null;
-        return await request<E>(
+        return await request<E | null>(
             `${this.endpoint.atualizar.caminho}/${id}`,
             this.endpoint.atualizar.metodo,
             data
@@ -30,8 +31,7 @@ export class CrudService<E extends EntidadePadrao> {
 
     async deletar(id: string | number): Promise<boolean> {
         if (!this.endpoint.deletar) return false;
-        await request(`${this.endpoint.deletar.caminho}/${id}`, this.endpoint.deletar.metodo);
+        await request<null>(`${this.endpoint.deletar.caminho}/${id}`, this.endpoint.deletar.metodo);
         return true;
     }
-
 }

@@ -3,14 +3,17 @@
 @import "tailwindcss";
 
 /*noinspection CssInvalidAtRule*/
-@plugin "daisyui" {
-    themes: light --default
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+    name: "light";
+    default: true;
+    --color-primary: blue;
+    --color-secondary: teal;
 }
-
 body {
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 11pt;
+    font-weight: 400;
+    font-size: 10pt;
 }
 
 .container-app {
@@ -29,8 +32,13 @@ body {
     display: grid;
     grid-template-areas:
         "nome-app"
+        "sidebar-filter-menu"
         "container-rotas-menu";
-    grid-template-rows: 5rem 1fr;
+    grid-template-rows: 4rem 3rem 1fr;
+}
+
+.sidebar-filter-menu {
+    grid-area: sidebar-filter-menu;
 }
 
 .container-pagina {
@@ -40,28 +48,52 @@ body {
         "navbar-app"
         "conteudo-pagina";
     grid-template-columns: 1fr;
-    grid-template-rows: 5rem 1rem 1fr;
+    grid-template-rows: 4rem 1rem 1fr;
+}
+
+.conteudo-pagina {
+    display: grid;
+    gap: 3rem;
+    grid-area: conteudo-pagina;
+    grid-template-areas:
+            "conteudo-pagina-cabecalho"
+            "conteudo-pagina-children";
+}
+
+.conteudo-pagina-cabecalho {
+    display: grid;
+    grid-area: conteudo-pagina-cabecalho;
+    align-items: center;
+    grid-template-areas:
+            "conteudo-pagina-cabecalho-pagina-aberta conteudo-pagina-cabecalho-acoes";
+    grid-template-columns: 1fr auto;
+}
+
+.conteudo-pagina-cabecalho-pagina-aberta {
+    grid-area: conteudo-pagina-cabecalho-pagina-aberta;
+}
+
+.conteudo-pagina-cabecalho-acoes {
+    grid-area: conteudo-pagina-cabecalho-acoes;
+}
+
+.conteudo-pagina-children {
+    grid-area: conteudo-pagina-children;
 }
 
 .navbar-app {
     grid-area: navbar-app;
     display: grid;
     grid-template-areas:
-            "nome-pagina usuario-componente";
-    grid-template-columns: 1fr 5rem;
+            "usuario-componente";
+    grid-template-columns: 1fr;
     align-content: center;
 }
 
-.nome-pagina {
-    grid-area: nome-pagina;
-}
-
 .usuario-componente {
+    display: flex;
+    justify-content: end;
     grid-area: usuario-componente;
-}
-
-.conteudo-pagina {
-    grid-area: conteudo-pagina;
 }
 
 .nome-app {
@@ -82,8 +114,7 @@ body {
     display: grid;
     grid-template-areas:
         "icone-rota-menu descricao-rota-menu arrow-rota-menu";
-    grid-template-columns: 5rem 1fr auto;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    grid-template-columns: 4rem 1fr auto;
 }
 
 .icone-rota-menu {
