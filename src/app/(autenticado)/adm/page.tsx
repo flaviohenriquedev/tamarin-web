@@ -1,5 +1,6 @@
-export default async function AdmPagina() {
+'use client'
 
+export default function AdmPagina() {
     return (
         <div>
             Pagina ADM

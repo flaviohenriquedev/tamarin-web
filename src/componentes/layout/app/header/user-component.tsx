@@ -15,39 +15,11 @@ interface Props {
 
 export const UserComponent = ({nomeUsuario}: Props) => {
 
-    const [senhaAtual, setSenhaAtual] = useState<string>('')
-    const [novaSenha, setNovaSenha] = useState<string>('')
-    const [confirmarNovaSenha, setConfirmarNovaSenha] = useState<string>('')
-
-    const [alterarSenha, setAlterarSenha] = useState<string>()
-
     const route = useRouter()
 
     function abrirModalAlterarSenha() {
         openModal('alterar_senha')
-        setSenhaAtual('')
-        setNovaSenha('')
-        setConfirmarNovaSenha('')
     }
-
-    const handleSubmitAlterarSenha = () => {
-        // if (!senhaAtual || !novaSenha || !confirmarNovaSenha) {
-        //     return;
-        // }
-        // if (novaSenha !== confirmarNovaSenha) {
-        //     toast.error("As novas senhas informadas são diferentes!");
-        // } else {
-        //     alterarSenhaUsuario(senhaAtual, novaSenha)
-        //         .then((response) => {
-        //             toast.success(response.data.mensagem);
-        //             closeModal(`alterar_senha`)
-        //         })
-        //         .catch((error) => {
-        //             toast.error(error.response.data.mensagem);
-        //         });
-        // }
-        closeModal('alterar_senha')
-    };
 
     async function logout() {
         await signOut({redirect: false})
@@ -57,7 +29,6 @@ export const UserComponent = ({nomeUsuario}: Props) => {
     return (
         <>
             <div className="flex items-center relative">
-
                 <div className="dropdown dropdown-end">
                     <div className={`flex gap-2 items-center`}>
                         <label
@@ -80,16 +51,6 @@ export const UserComponent = ({nomeUsuario}: Props) => {
                             <ul className={`flex flex-col`}
                             >
                                 <div className={`flex flex-col`}>
-                                    {/*<div*/}
-                                    {/*    className={`flex gap-2 items-center p-2 rounded-lg hover:cursor-pointer hover:bg-base-200`}*/}
-                                    {/*    onClick={() => openModal('seletor_de_temas')}>*/}
-                                    {/*    <div>*/}
-                                    {/*        <PiGear/>*/}
-                                    {/*    </div>*/}
-                                    {/*    <span>Configurações</span>*/}
-                                    {/*</div>*/}
-
-                                    {/*<div className="divider text-base-100"></div>*/}
                                     <div onClick={abrirModalAlterarSenha}
                                          className={`flex gap-2 items-center p-2 rounded-lg hover:cursor-pointer hover:bg-base-200`}>
                                         <div>
@@ -110,39 +71,6 @@ export const UserComponent = ({nomeUsuario}: Props) => {
                     </div>
                 </div>
             </div>
-
-            {/*<Modal idModal={`alterar_senha`}>*/}
-            {/*    <LineContent>*/}
-            {/*        <LabelContainer descricao={`Senha atual`}>*/}
-            {/*            <InputString onChange={(e) => setSenhaAtual(e.target.value)} type={`password`}*/}
-            {/*                         entidade={alterarSenha}*/}
-            {/*                         value={senhaAtual}*/}
-            {/*                         typeof={`password`}*/}
-            {/*                         autoComplete={`off`}/>*/}
-            {/*        </LabelContainer>*/}
-            {/*    </LineContent>*/}
-            {/*    <div className="divider text-base-100"></div>*/}
-            {/*    <LineContent>*/}
-            {/*        <LabelContainer descricao={`Nova senha`}>*/}
-            {/*            <InputString onChange={(e) => setNovaSenha(e.target.value)} type={`password`}*/}
-            {/*                         value={novaSenha}*/}
-            {/*                         typeof={`password`}*/}
-            {/*                         autoComplete={`off`}/>*/}
-            {/*        </LabelContainer>*/}
-            {/*    </LineContent>*/}
-            {/*    <LineContent>*/}
-            {/*        <LabelContainer descricao={`Confirmar nova senha`}>*/}
-            {/*            <InputString onChange={(e) => setConfirmarNovaSenha(e.target.value)} type={`password`}*/}
-            {/*                         value={confirmarNovaSenha}*/}
-            {/*                         typeof={`password`}*/}
-            {/*                         autoComplete={`off`}/>*/}
-            {/*        </LabelContainer>*/}
-            {/*    </LineContent>*/}
-
-            {/*    <LineContent>*/}
-            {/*        <Button identifier={`Alterar`} className={`w-full`} onClick={handleSubmitAlterarSenha}/>*/}
-            {/*    </LineContent>*/}
-            {/*</Modal>*/}
         </>
     );
 };

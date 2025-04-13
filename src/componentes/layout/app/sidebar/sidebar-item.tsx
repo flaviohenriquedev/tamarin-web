@@ -1,11 +1,9 @@
 import {IoIosArrowDown} from "react-icons/io";
-import {ReactNode, useContext, useState} from "react";
+import {ReactNode, useState} from "react";
 import {useRouter} from "next/navigation";
 import {SidebarSubitem} from "@/componentes/layout/app/sidebar/sidebar-subitem";
 import {AnimatePresence, motion} from 'framer-motion'
-import {BreadcrumbType, RouteType} from "@/sistema/_root/types/root-types";
-import {CiFolderOn} from "react-icons/ci";
-import {BreadcrumbContext} from "@/sistema/_root/context/breadcrumb-context";
+import {RouteType} from "@/sistema/_root/types/root-types";
 
 type Props = {
     rota: RouteType,
@@ -13,26 +11,12 @@ type Props = {
 
 export function SidebarItem({rota}: Props) {
 
-    const { setBreadcrumbs } = useContext(BreadcrumbContext);
     const [openSubMenu, setOpenSubMenu] = useState<boolean>(false);
     const route = useRouter()
 
     function handleClickItemMenu(title: string, icon?: ReactNode, href?: string) {
-        const item: BreadcrumbType = {
-            title,
-            icon: icon ?? <CiFolderOn />,
-            href
-        };
-
-        setBreadcrumbs((prev) => {
-            const jaExiste = prev.some(b => b.href === item.href);
-            if (jaExiste) return prev;
-            return [...prev, item];
-        });
         push(href);
     }
-
-    // essa funcão foi unificada e repassada ao SidebarSubitem para que os dois possam fazer inserção no mesmo breadcrumb
     function push(href?: string) {
         if (href) {
             route.push(href)
@@ -83,10 +67,10 @@ export function SidebarItem({rota}: Props) {
                     {rota.icon}
                 </div>
                 <div className={`
-                                        descricao-rota-menu
-                                        flex
-                                        items-center
-                                        justify-start`}>
+                                descricao-rota-menu
+                                flex
+                                items-center
+                                justify-start`}>
                     <label>{rota.title}</label>
                 </div>
                 {rota.subRoute && (

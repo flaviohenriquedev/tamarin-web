@@ -1,24 +1,17 @@
-import {BsPersonPlus} from "react-icons/bs";
 import {RouteType} from "@/sistema/_root/types/root-types";
-import {
-    MdAttachMoney,
-    MdCardGiftcard, MdExitToApp, MdHowToReg,
-    MdOutlineAccessTime,
-    MdOutlineAdminPanelSettings,
-    MdSchool
-} from "react-icons/md";
+import {icones as icone} from "@/sistema/_root/icones/_index";
 
-const tamanhoIcone: number = 18
+const tamanhoIcone = 18;
 export const rotasRecursosHumanos: RouteType[] = [
     {
         title: 'Colaborador',
-        icon: <BsPersonPlus size={tamanhoIcone} />,
+        icon: <icone.colaboradores size={tamanhoIcone} />,
         href: '/adm/colaborador',
         breadcrumbRef: 'colaborador'
     },
     {
         title: 'Folha de Pagamento',
-        icon: <MdAttachMoney size={tamanhoIcone} />,
+        icon: <icone.folhaPagamento size={tamanhoIcone} />,
         breadcrumbRef: 'folha_pagamento',
         subRoute: [
             {
@@ -40,7 +33,7 @@ export const rotasRecursosHumanos: RouteType[] = [
     },
     {
         title: 'Ponto e Frequência',
-        icon: <MdOutlineAccessTime size={tamanhoIcone} />,
+        icon: <icone.pontoFrequencia size={tamanhoIcone} />,
         breadcrumbRef: 'ponto',
         subRoute: [
             {
@@ -67,7 +60,7 @@ export const rotasRecursosHumanos: RouteType[] = [
     },
     {
         title: 'Benefícios',
-        icon: <MdCardGiftcard size={tamanhoIcone} />,
+        icon: <icone.beneficios size={tamanhoIcone} />,
         breadcrumbRef: 'beneficios',
         subRoute: [
             {
@@ -94,7 +87,7 @@ export const rotasRecursosHumanos: RouteType[] = [
     },
     {
         title: 'Treinamentos',
-        icon: <MdSchool size={tamanhoIcone} />,
+        icon: <icone.treinamentos size={tamanhoIcone} />,
         breadcrumbRef: 'treinamentos',
         subRoute: [
             {
@@ -116,7 +109,7 @@ export const rotasRecursosHumanos: RouteType[] = [
     },
     {
         title: 'Recrutamento e Seleção',
-        icon: <MdHowToReg size={tamanhoIcone} />,
+        icon: <icone.recrutamentoSelecao size={tamanhoIcone} />,
         breadcrumbRef: 'recrutamento',
         subRoute: [
             {
@@ -138,7 +131,7 @@ export const rotasRecursosHumanos: RouteType[] = [
     },
     {
         title: 'Desligamentos',
-        icon: <MdExitToApp size={tamanhoIcone} />,
+        icon: <icone.desligamentos size={tamanhoIcone} />,
         breadcrumbRef: 'desligamentos',
         subRoute: [
             {
@@ -155,7 +148,7 @@ export const rotasRecursosHumanos: RouteType[] = [
     },
     {
         title: 'Administração',
-        icon: <MdOutlineAdminPanelSettings size={tamanhoIcone} />,
+        icon: <icone.administracao size={tamanhoIcone} />,
         breadcrumbRef: 'administracao',
         subRoute: [
             {

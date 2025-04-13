@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3495b219-708e-4385-bc3c-ebd8c0c08e72" name="Changes" comment="Criando componente de listagem de colaboradores">
+      <change afterPath="$PROJECT_DIR$/src/componentes/layout/app/nome-cliente/nome-cliente.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/componentes/ui/data-display/navigation/breadcrumb/ts/formar-breadcrumb.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(autenticado)/adm/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(autenticado)/adm/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(autenticado)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(autenticado)/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/header/user-component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/header/user-component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-subitem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-subitem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/ui/data-display/navigation/breadcrumb/breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/ui/data-display/navigation/breadcrumb/breadcrumb.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentes/ui/data-input/input-filter/Input-filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/ui/data-input/input-filter/Input-filter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/context/breadcrumb-context.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/icones/_index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/icones/_index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/icones/icone-badge.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/_root/providers/providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/providers/providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-pagina-inicial.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-pagina-inicial.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-tab-cadastro.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/rotas-recursos-humanos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/rotas-recursos-humanos.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +32,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -37,7 +57,7 @@
     &quot;JavaScript Debug.debug.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/novo-container&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/flavio.rosa/MyProjects/tamarin/tamarin-web/src/componentes/ui/data-input&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -144,7 +164,8 @@
       <workItem from="1744412256965" duration="4949000" />
       <workItem from="1744417259822" duration="53000" />
       <workItem from="1744449537323" duration="30055000" />
-      <workItem from="1744501322579" duration="2822000" />
+      <workItem from="1744501322579" duration="4130000" />
+      <workItem from="1744540080019" duration="11156000" />
     </task>
     <task id="LOCAL-00001" summary="Criando componente de listagem de colaboradores">
       <option name="closed" value="true" />

@@ -1,10 +1,10 @@
-import {GoDotFill} from "react-icons/go";
 import {ReactNode, useState} from "react";
 import {IoIosArrowDown} from "react-icons/io";
 import {AnimatePresence, motion} from "framer-motion";
 import {RouteType} from "@/sistema/_root/types/root-types";
-import { MdLastPage } from "react-icons/md";
-import { RxDropdownMenu } from "react-icons/rx";
+import {MdLastPage} from "react-icons/md";
+import {RxDropdownMenu} from "react-icons/rx";
+import { icones as icone } from '@/sistema/_root/icones/_index'
 
 type Props = {
     children: ReactNode;
@@ -24,18 +24,17 @@ export function SidebarSubitem({children, className, subRota, handleClick}: Prop
     }
 
     return (
-        <li key={subRota.title} className={className}>
+        <li key={subRota.title} className={`${className} text-[9pt] ml-2`}>
             <div className={`item-rota-menu py-2 hover:bg-base-300`}
                  onClick={() => handleClickItemMenu(subRota)}>
                 <div className={`icone-rota-menu flex items-center justify-center`}>
-                    {subRota.subRoute ? <RxDropdownMenu /> : <MdLastPage />}
+                    {subRota.subRoute ? <icone.tresPontosCirculado size={15}/> : <icone.arquivo size={15}/>}
                 </div>
                 <div className={`
                                         descricao-rota-menu
                                         flex
                                         items-center
-                                        justify-start
-                                        text-[10pt]`}>
+                                        justify-start`}>
                     <label>{subRota.title}</label>
                 </div>
                 {children && (

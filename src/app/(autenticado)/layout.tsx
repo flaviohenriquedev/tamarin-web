@@ -1,11 +1,12 @@
 'use client'
 
-import { ReactNode, useEffect } from "react";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import {ReactNode, useEffect} from "react";
+import {useSession} from "next-auth/react";
+import {useRouter} from "next/navigation";
 import {Sidebar} from "@/componentes/layout/app/sidebar/sidebar";
 import {rotasRecursosHumanos} from "@/sistema/recursos-humanos/rotas-recursos-humanos";
 import {HeaderApp} from "@/componentes/layout/app/header/header";
+import {NomeCliente} from "@/componentes/layout/app/nome-cliente/nome-cliente";
 
 export default function LayoutAutenticacao({ children }: { children: ReactNode }) {
     const { status } = useSession();
@@ -19,13 +20,21 @@ export default function LayoutAutenticacao({ children }: { children: ReactNode }
 
     if (status === "loading" || status === 'unauthenticated') return null;
     return (
-        <div className={`container-app`}>
-            <Sidebar routes={rotasRecursosHumanos}/>
-            <div className={`container-pagina`}>
+        <div className={`container-aplicacao`}>
+            <div className={`area-nome-cliente border border-base-200/70`}>
+                <NomeCliente />
+            </div>
+
+            <div className={`area-header-aplicacao border border-base-200/70`}>
                 <HeaderApp />
-                <main className={`conteudo-pagina p-5 pb-50`}>
-                    {children}
-                </main>
+            </div>
+
+            <div className={`area-menu-lateral border border-base-200/70`}>
+                <Sidebar routes={rotasRecursosHumanos}/>
+            </div>
+
+            <div className={`area-conteudo border border-base-200/70`}>
+                {children}
             </div>
         </div>
     );

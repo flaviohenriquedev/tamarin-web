@@ -1,13 +1,11 @@
 'use client'
 
-import {GiMonkey} from "react-icons/gi";
-import {redirect} from "next/navigation";
 import {SidebarItem} from "@/componentes/layout/app/sidebar/sidebar-item";
 import {RouteType} from "@/sistema/_root/types/root-types";
 import {useEffect, useState} from "react";
-import {InputString} from "@/componentes/ui/data-input/input/input-string";
 import {InputFilter} from "@/componentes/ui/data-input/input-filter/Input-filter";
 import {LineContentFill} from "@/componentes/ui/data-display/line-content/line-content-fill";
+import {LineContent} from "@/componentes/ui/data-display/line-content/line-content";
 
 type Props = {
     routes: RouteType[]
@@ -71,23 +69,22 @@ export function Sidebar({routes}: Props) {
     }
 
     return (
-        <aside className="sidebar-app bg-base-200 border-r border-base-300 h-screen flex flex-col">
-            {/* Cabeçalho fixo */}
-            <div
-                className="text-primary nome-app flex items-center justify-start border-b border-base-300 gap-2 px-6 shrink-0"
-                onClick={() => redirect("/adm")}
-            >
-                <GiMonkey size={30}/>
-                <label className="nome-app-label text-primary">Tamarin</label>
-            </div>
-            <div className={`sidebar-filter-menu p-2`}>
-                <LineContentFill>
-                    <InputFilter placeholder={`Buscar Menu`}
+        <aside className="h-screen flex flex-col">
+            <div className={`flex justify-center sidebar-filter-menu py-2 px-4 w-full `}>
+                <LineContent>
+                    <InputFilter placeholder={`Filtrar Menu`}
                                  onChange={(e) => setSearchMenu(e.target.value)}/>
-                </LineContentFill>
+                </LineContent>
             </div>
             {/* Lista com scroll se passar da tela */}
-            <div className="container-rotas-menu overflow-y-scroll overflow-x-hidden flex-1 pb-50">
+            <div className={`
+                container-rotas-menu
+                overflow-y-scroll
+                overflow-x-hidden
+                flex-1
+                pb-50
+                h-32
+            `}>
                 {renderListaDeRotas()}
             </div>
         </aside>
