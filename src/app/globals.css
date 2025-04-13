@@ -16,6 +16,31 @@ body {
     font-size: 10pt;
 }
 
+.container-aplicacao {
+    display: grid;
+    grid-template-areas:
+        "card-nome-cliente area-header-aplicacao"
+        "area-menu-lateral area-conteudo";
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: 4rem 1fr;
+}
+
+.area-nome-cliente {
+    grid-area: card-nome-cliente;
+}
+
+.area-header-aplicacao {
+    grid-area: area-header-aplicacao;
+}
+
+.area-menu-lateral {
+    grid-area: area-menu-lateral;
+}
+
+.area-conteudo {
+    grid-area: area-conteudo;
+}
+
 .container-app {
     display: grid;
     grid-template-areas:

@@ -7,6 +7,7 @@ import {RouteType} from "@/sistema/_root/types/root-types";
 import {useEffect, useState} from "react";
 import {InputString} from "@/componentes/ui/data-input/input/input-string";
 import {InputFilter} from "@/componentes/ui/data-input/input-filter/Input-filter";
+import {LineContentFill} from "@/componentes/ui/data-display/line-content/line-content-fill";
 
 type Props = {
     routes: RouteType[]
@@ -80,8 +81,10 @@ export function Sidebar({routes}: Props) {
                 <label className="nome-app-label text-primary">Tamarin</label>
             </div>
             <div className={`sidebar-filter-menu p-2`}>
-                <InputFilter placeholder={`Buscar Menu`}
-                             onChange={(e) => setSearchMenu(e.target.value)}/>
+                <LineContentFill>
+                    <InputFilter placeholder={`Buscar Menu`}
+                                 onChange={(e) => setSearchMenu(e.target.value)}/>
+                </LineContentFill>
             </div>
             {/* Lista com scroll se passar da tela */}
             <div className="container-rotas-menu overflow-y-scroll overflow-x-hidden flex-1 pb-50">
