@@ -178,6 +178,27 @@ export const rotasRecursosHumanos: RouteType[] = [
                 ]
             },
             {
+                title: 'Domínio',
+                breadcrumbRef: 'dominio',
+                subRoute: [
+                    {
+                        title: 'País',
+                        href: '/dominio/pais',
+                        breadcrumbRef: 'pais'
+                    },
+                    {
+                        title: 'Estado',
+                        href: '/dominio/estado',
+                        breadcrumbRef: 'estado'
+                    },
+                    {
+                        title: 'Cidade',
+                        href: '/dominio/cidade',
+                        breadcrumbRef: 'cidade'
+                    }
+                ]
+            },
+            {
                 title: 'Unidades',
                 href: '/adm/unidade',
                 breadcrumbRef: 'unidade'

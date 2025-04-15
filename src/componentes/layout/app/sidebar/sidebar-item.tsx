@@ -1,5 +1,5 @@
 import {IoIosArrowDown} from "react-icons/io";
-import {ReactNode, useState} from "react";
+import {useState} from "react";
 import {useRouter} from "next/navigation";
 import {SidebarSubitem} from "@/componentes/layout/app/sidebar/sidebar-subitem";
 import {AnimatePresence, motion} from 'framer-motion'
@@ -14,7 +14,7 @@ export function SidebarItem({rota}: Props) {
     const [openSubMenu, setOpenSubMenu] = useState<boolean>(false);
     const route = useRouter()
 
-    function handleClickItemMenu(title: string, icon?: ReactNode, href?: string) {
+    function handleClickItemMenu(href?: string) {
         push(href);
     }
     function push(href?: string) {
@@ -30,6 +30,7 @@ export function SidebarItem({rota}: Props) {
                 <AnimatePresence initial={false}>
                     {openSubMenu && (
                         <motion.ul
+                            className={`my-1 ml-[1.9rem]`}
                             initial={{height: 0, opacity: 0}}
                             animate={{height: 'auto', opacity: 1}}
                             exit={{height: 0, opacity: 0}}
@@ -52,13 +53,17 @@ export function SidebarItem({rota}: Props) {
     }
 
     return (
-        <li key={rota.title} className={`border-b ${openSubMenu ? 'border-primary' : 'border-transparent '} `}>
+        <li key={rota.title}
+            className={`
+                ${openSubMenu ? 'border-primary' : 'border-transparent'}
+                `}>
             <div
                 onClick={() => {
-                    handleClickItemMenu(rota.title, rota.icon, rota?.href)
+                    handleClickItemMenu(rota?.href)
                     rota.subRoute && setOpenSubMenu(!openSubMenu)
                 }}
                 className={`item-rota-menu
+                            rounded-lg
                             py-2
                             ${openSubMenu && 'bg-primary text-primary-content'}
                             hover:bg-primary
@@ -79,7 +84,7 @@ export function SidebarItem({rota}: Props) {
                                         items-center
                                         rounded-full
                                         arrow-rota-menu
-                                        px-4 
+                                        px-4
                                         transition-transform
                                         duration-300
                                         ${openSubMenu ? 'rotate-180' : ''}

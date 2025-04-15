@@ -1,17 +1,16 @@
 'use client'
 
-import {SidebarItem} from "@/componentes/layout/app/sidebar/sidebar-item";
-import {RouteType} from "@/sistema/_root/types/root-types";
-import {useEffect, useState} from "react";
-import {InputFilter} from "@/componentes/ui/data-input/input-filter/Input-filter";
-import {LineContentFill} from "@/componentes/ui/data-display/line-content/line-content-fill";
-import {LineContent} from "@/componentes/ui/data-display/line-content/line-content";
+import { SidebarItem } from "@/componentes/layout/app/sidebar/sidebar-item";
+import { RouteType } from "@/sistema/_root/types/root-types";
+import { useEffect, useState } from "react";
+import { InputFilter } from "@/componentes/ui/data-input/input-filter/Input-filter";
+import { LineContent } from "@/componentes/ui/data-display/line-content/line-content";
 
 type Props = {
     routes: RouteType[]
 }
 
-export function Sidebar({routes}: Props) {
+export function Sidebar({ routes }: Props) {
 
     const [searchMenu, setSearchMenu] = useState("");
     const [filteredData, setFilteredData] = useState<RouteType[]>(routes);
@@ -22,7 +21,7 @@ export function Sidebar({routes}: Props) {
 
             if (routes) {
                 routes.forEach((d) => {
-                    const filteredMenu: RouteType = {...d};
+                    const filteredMenu: RouteType = { ...d };
                     if (
                         d.title
                             .toLowerCase()
@@ -60,9 +59,9 @@ export function Sidebar({routes}: Props) {
 
     function renderListaDeRotas() {
         return (
-            <ul className="grid grid-cols-1 gap-1 lista-rotas-menu mt-4">
+            <ul className="grid grid-cols-1 gap-1 lista-rotas-menu mt-4 ">
                 {filteredData.map(rota => (
-                    <SidebarItem key={rota.title} rota={rota}/>
+                    <SidebarItem key={rota.title} rota={rota} />
                 ))}
             </ul>
         );
@@ -73,7 +72,7 @@ export function Sidebar({routes}: Props) {
             <div className={`flex justify-center sidebar-filter-menu py-2 px-4 w-full `}>
                 <LineContent>
                     <InputFilter placeholder={`Filtrar Menu`}
-                                 onChange={(e) => setSearchMenu(e.target.value)}/>
+                        onChange={(e) => setSearchMenu(e.target.value)} />
                 </LineContent>
             </div>
             {/* Lista com scroll se passar da tela */}

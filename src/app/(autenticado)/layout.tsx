@@ -33,7 +33,7 @@ export default function LayoutAutenticacao({ children }: { children: ReactNode }
                 <Sidebar routes={rotasRecursosHumanos}/>
             </div>
 
-            <div className={`area-conteudo border border-base-200/70`}>
+            <div className={`area-conteudo border border-base-200/70 p-2`}>
                 {children}
             </div>
         </div>

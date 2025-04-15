@@ -5,25 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3495b219-708e-4385-bc3c-ebd8c0c08e72" name="Changes" comment="Criando componente de listagem de colaboradores">
-      <change afterPath="$PROJECT_DIR$/src/componentes/layout/app/nome-cliente/nome-cliente.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/componentes/ui/data-display/navigation/breadcrumb/ts/formar-breadcrumb.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flowbite-react/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flowbite-react/config.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(autenticado)/adm/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(autenticado)/adm/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(autenticado)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(autenticado)/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/header/user-component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/header/user-component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-item.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-subitem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar-subitem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/layout/app/sidebar/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componentes/ui/data-display/navigation/breadcrumb/breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/ui/data-display/navigation/breadcrumb/breadcrumb.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/componentes/ui/data-input/input-filter/Input-filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/ui/data-input/input-filter/Input-filter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/_root/context/breadcrumb-context.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sistema/_root/icones/_index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/icones/_index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/_root/icones/icone-badge.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/_root/providers/providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/_root/providers/providers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-pagina-inicial.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-pagina-inicial.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/modulos/usuario/usuario-tab-cadastro.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sistema/recursos-humanos/rotas-recursos-humanos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/recursos-humanos/rotas-recursos-humanos.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +155,9 @@
       <workItem from="1744417259822" duration="53000" />
       <workItem from="1744449537323" duration="30055000" />
       <workItem from="1744501322579" duration="4130000" />
-      <workItem from="1744540080019" duration="11156000" />
+      <workItem from="1744540080019" duration="11232000" />
+      <workItem from="1744654647041" duration="3444000" />
+      <workItem from="1744665714892" duration="6212000" />
     </task>
     <task id="LOCAL-00001" summary="Criando componente de listagem de colaboradores">
       <option name="closed" value="true" />

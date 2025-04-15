@@ -8,12 +8,11 @@ import {
     MdOutlineAdminPanelSettings,
     MdSchool
 } from "react-icons/md";
-import { BsPersonPlus } from "react-icons/bs";
-import { IoIosArrowForward } from "react-icons/io";
-import { PiDotsThreeFill } from "react-icons/pi";
-import { FaRegFolder } from "react-icons/fa";
-import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
-import { LuFile } from "react-icons/lu";
+import {BsPersonPlus} from "react-icons/bs";
+import {IoIosArrowForward} from "react-icons/io";
+import {PiDotsThreeFill} from "react-icons/pi";
+import {HiOutlineDotsCircleHorizontal} from "react-icons/hi";
+import {LuFile, LuFolderInput, LuFolderTree} from "react-icons/lu";
 
 export const icones = {
     folhaPagamento: MdAttachMoney,
@@ -27,6 +26,7 @@ export const icones = {
     setaParaDireita: IoIosArrowForward,
     tresPontos: PiDotsThreeFill,
     tresPontosCirculado: HiOutlineDotsCircleHorizontal,
-    pasta: FaRegFolder,
+    pasta: LuFolderInput,
+    arvoreDePastas: LuFolderTree,
     arquivo: LuFile
 };

@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
-/*noinspection CssInvalidAtRule*/
 @plugin "daisyui";
-@plugin "daisyui/theme" {
-    name: "light";
-    default: true;
-    --color-primary: blue;
-    --color-secondary: teal;
-}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -31,10 +24,6 @@ body {
 
 .area-header-aplicacao {
     grid-area: area-header-aplicacao;
-}
-
-.header-aplicacao {
-
 }
 
 .area-menu-lateral {
@@ -122,7 +111,7 @@ body {
     display: grid;
     grid-template-areas:
         "icone-rota-menu descricao-rota-menu arrow-rota-menu";
-    grid-template-columns: 3rem 1fr auto;
+    grid-template-columns: 4rem 1fr auto;
 }
 
 .icone-rota-menu {
